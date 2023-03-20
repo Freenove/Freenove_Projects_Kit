@@ -9,7 +9,7 @@
 #include <FlexiTimer2.h>      // Contains FlexiTimer2 Library
 
 // initialize the library with the numbers of the interface pins
-LiquidCrystal_I2C lcd(0x27, 16, 2);
+LiquidCrystal_I2C lcd(0x3f, 16, 2);
 int tempPin = 0;                // define the pin of temperature sensor
 float tempVal;                  // define a variable to store temperature value
 int hour, minute, second;       // define variables stored record time
