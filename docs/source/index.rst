@@ -10,7 +10,7 @@ Download
 
 Please download the full resources including code examples, datasheets, etc. first.
 
-`Click to download <https://github.com/Freenove/Freenove_Projects_Kit/archive/refs/heads/master.zip>`_
+`Click to download <https://github.com/Freenove/Freenove_Projects_Kit/archive/refs/heads/refs.zip>`_
 
 Support
 ====================================================
