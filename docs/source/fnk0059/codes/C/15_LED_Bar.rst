@@ -14,15 +14,20 @@ Firstly, let us learn how to use the 74HC595 chip, which is very helpful for us 
 Component List
 ===============================================
 
-+-------------------------+------------------------------+-------------------------------+
-| Control board x1        | USB cable x1                 | LED Bar x1                    |
-|                         |                              |                               |
-| |Chapter06_00|          | |Chapter06_01|               | |Chapter15_00|                |
-+-------------------------+------------------------------+-------------------------------+
-| Freenove Projects Board                                                                |
-|                                                                                        |
-| |Chapter06_04|                                                                         |
-+----------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+------------------------------+-------------------------------+
+    | Control board x1        | USB cable x1                 | LED Bar x1                    |
+    |                         |                              |                               |
+    | |Chapter06_00|          | |Chapter06_01|               | |Chapter15_00|                |
+    +-------------------------+------------------------------+-------------------------------+
+    | Freenove Projects Board                                                                |
+    |                                                                                        |
+    | |Chapter06_04|                                                                         |
+    +----------------------------------------------------------------------------------------+
 
 .. |Chapter06_00| image:: ../_static/imgs/6_RGB_LED/Chapter06_00.png
 .. |Chapter06_01| image:: ../_static/imgs/6_RGB_LED/Chapter06_01.png
@@ -42,7 +47,8 @@ One Hexadecimal bit can present one number between 0-15. To facilitate writing, 
 .. list-table:: 
     :width: 100%
     :align: center
-    :class: product-table
+    :class: zebra text-center
+    :header-rows: 1
 
     *   -   Pin name
         -   0
@@ -83,9 +89,8 @@ One Hexadecimal bit can present one number between 0-15. To facilitate writing, 
 Conversion between hexadecimal and decimal system is similar to the conversion between hexadecimal and binary, for example, the sixteen digit 0x12:
 
 .. list-table:: 
-    :width: 100%
     :align: center
-    :class: product-table
+    :class: table-line text-center
 
     *   -   Sequence
         -   1
@@ -109,9 +114,8 @@ The result is of the conversion 0x12.
 When you write code, sometimes it is convenient to use hexadecimal, especially when involving bit operation, because 1 hexadecimal number can be expressed by 4 binary number (2^4=16). The corresponding relationship between 4 bit binary numbers and 1 hexadecimal number is shown as follows:
 
 .. list-table:: 
-    :width: 100%
     :align: center
-    :class: product-table
+    :class: text-center table-line
 
     *   -   4 bit binary
         -   0000
@@ -134,9 +138,8 @@ When you write code, sometimes it is convenient to use hexadecimal, especially w
         -   7
 
 .. list-table:: 
-    :width: 100%
     :align: center
-    :class: product-table
+    :class: text-center table-line
 
     *   -   4 bit binary
         -   0000
@@ -174,9 +177,9 @@ A 74HC595 chip is used to convert serial data into parallel data. A 74HC595 chip
 The ports of 74HC595 are described as follows:
 
 .. list-table:: 
-    :width: 100%
     :align: center
-    :class: product-table
+    :class: zebra
+    :header-rows: 1
 
     *   -   Pin name
         -   Pin number
@@ -229,15 +232,20 @@ Circuit
 
 Use pin 11, 12, 13 on the control board to control the 74HC595, and connect it to the 10 LEDs of LED bar graph.
 
-+-------------------------+----------------------------------+
-| Schematic diagram       | Hardware connection              |
-|                         |                                  |
-| |Chapter15_03|          | |Chapter15_04|                   |
-+-------------------------+----------------------------------+
-| Hardware connection                                        |
-|                                                            |
-| |Chapter15_05|                                             |
-+------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------------------------+
+    | Schematic diagram       | Hardware connection              |
+    |                         |                                  |
+    | |Chapter15_03|          | |Chapter15_04|                   |
+    +-------------------------+----------------------------------+
+    | Hardware connection                                        |
+    |                                                            |
+    | |Chapter15_05|                                             |
+    +------------------------------------------------------------+
 
 .. |Chapter15_03| image:: ../_static/imgs/15_LED_Bar/Chapter15_03.png
 .. |Chapter15_04| image:: ../_static/imgs/15_LED_Bar/Chapter15_04.png

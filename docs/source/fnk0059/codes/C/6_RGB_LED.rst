@@ -12,19 +12,24 @@ RGB LED has three different-color LEDs inside. We will use 3 potentiometers to c
 Component List
 ==============================
 
-+-------------------------+------------------------------+-------------------------------+
-| Control board x1        | USB cable x1                 | RGB LED x1                    |
-|                         |                              |                               |
-| |Chapter06_00|          | |Chapter06_01|               | |Chapter06_02|                |
-+-------------------------+------------------------------+-------------------------------+
-| Jumper Wire x4                                                                         |
-|                                                                                        |
-| |Chapter06_03|                                                                         |
-+----------------------------------------------------------------------------------------+
-| Freenove Projects Board                                                                |
-|                                                                                        |
-| |Chapter06_04|                                                                         |
-+----------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+------------------------------+-------------------------------+
+    | Control board x1        | USB cable x1                 | RGB LED x1                    |
+    |                         |                              |                               |
+    | |Chapter06_00|          | |Chapter06_01|               | |Chapter06_02|                |
+    +-------------------------+------------------------------+-------------------------------+
+    | Jumper Wire x4                                                                         |
+    |                                                                                        |
+    | |Chapter06_03|                                                                         |
+    +----------------------------------------------------------------------------------------+
+    | Freenove Projects Board                                                                |
+    |                                                                                        |
+    | |Chapter06_04|                                                                         |
+    +----------------------------------------------------------------------------------------+
 
 .. |Chapter06_00| image:: ../_static/imgs/6_RGB_LED/Chapter06_00.png
 .. |Chapter06_01| image:: ../_static/imgs/6_RGB_LED/Chapter06_01.png
@@ -34,6 +39,7 @@ Component List
 
 Component Knowledge
 ==========================
+
 RGB LED
 ---------------------------
 
@@ -54,19 +60,24 @@ Circuit
 
 Use pin A1, A2, A3 ports of the control board to detect the voltage of rotary potentiometer, and control RGB LED by pin 9, 10, 11.
 
-+-------------------------+-----------------------------------------------------------+
-| Schematic diagram       | Hardware connection                                       |
-|                         |                                                           |
-| |Chapter06_07|          | |Chapter06_08|                                            |
-+-------------------------+-----------------------------------------------------------+
-| Hardware connection                                                                 |
-|                                                                                     |
-| Insert the Control Board to Freenove Projects Board, and then turn the corresponding|
-|                                                                                     |
-| switch to the right(ON).                                                            |
-|                                                                                     |
-| |Chapter06_09|                                                                      |
-+-------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+-----------------------------------------------------------+
+    | Schematic diagram       | Hardware connection                                       |
+    |                         |                                                           |
+    | |Chapter06_07|          | |Chapter06_08|                                            |
+    +-------------------------+-----------------------------------------------------------+
+    | Hardware connection                                                                 |
+    |                                                                                     |
+    | Insert the Control Board to Freenove Projects Board, and then turn the corresponding|
+    |                                                                                     |
+    | switch to the right(ON).                                                            |
+    |                                                                                     |
+    | |Chapter06_09|                                                                      |
+    +-------------------------------------------------------------------------------------+
 
 .. |Chapter06_07| image:: ../_static/imgs/6_RGB_LED/Chapter06_07.png
 .. |Chapter06_08| image:: ../_static/imgs/6_RGB_LED/Chapter06_08.png
@@ -97,19 +108,24 @@ In the previous section, we have finished controlling the RGB LED to emit light 
 Component List
 ==============================
 
-+-------------------------+------------------------------+-------------------------------+
-| Control board x1        | USB cable x1                 | RGB LED x1                    |
-|                         |                              |                               |
-| |Chapter06_00|          | |Chapter06_01|               | |Chapter06_02|                |
-+-------------------------+------------------------------+-------------------------------+
-| Jumper Wire x4                                                                         |
-|                                                                                        |
-| |Chapter06_03|                                                                         |
-+----------------------------------------------------------------------------------------+
-| Freenove Projects Board                                                                |
-|                                                                                        |
-| |Chapter06_04|                                                                         |
-+----------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+------------------------------+-------------------------------+
+    | Control board x1        | USB cable x1                 | RGB LED x1                    |
+    |                         |                              |                               |
+    | |Chapter06_00|          | |Chapter06_01|               | |Chapter06_02|                |
+    +-------------------------+------------------------------+-------------------------------+
+    | Jumper Wire x4                                                                         |
+    |                                                                                        |
+    | |Chapter06_03|                                                                         |
+    +----------------------------------------------------------------------------------------+
+    | Freenove Projects Board                                                                |
+    |                                                                                        |
+    | |Chapter06_04|                                                                         |
+    +----------------------------------------------------------------------------------------+
 
 Circuit
 =============================
@@ -121,10 +137,10 @@ Use pin 9, 10, 11 of the control board to control RGB LED.
     :align: center
     :class: product-table
 
-    *   -   Schematic diagram
-    *   -   |Chapter06_10|
-    *   -   Hardware connection
-    *   -   |Chapter06_11|
+    * - **Schematic diagram**
+    * - |Chapter06_10|
+    * - **Hardware connection**
+    * - |Chapter06_11|
 
 .. |Chapter06_10| image:: ../_static/imgs/6_RGB_LED/Chapter06_10.png
 .. |Chapter06_11| image:: ../_static/imgs/6_RGB_LED/Chapter06_11.png

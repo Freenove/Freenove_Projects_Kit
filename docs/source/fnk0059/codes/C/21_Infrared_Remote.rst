@@ -9,17 +9,22 @@ Project 21.1 Infrared Remote Control
 
 First, we need to understand how infrared remote control works, and then get the command sent from infrared remote control.
 
-+-------------------------+----------------+----------------+------------------+
-| Control board x1        | USB cable x1   | Infrared       | Infrared remote  |
-|                         |                |                |                  |
-|                         |                | receiver x1    | control x1       |
-|                         |                |                |                  |
-| |Chapter06_00|          | |Chapter06_01| | |Chapter21_00| |  |Chapter21_01|  |
-+-------------------------+----------------+----------------+------------------+
-| Freenove Projects Board                                                      |
-|                                                                              |
-| |Chapter06_04|                                                               |
-+------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------+----------------+------------------+
+    | Control board x1        | USB cable x1   | Infrared       | Infrared remote  |
+    |                         |                |                |                  |
+    |                         |                | receiver x1    | control x1       |
+    |                         |                |                |                  |
+    | |Chapter06_00|          | |Chapter06_01| | |Chapter21_00| |  |Chapter21_01|  |
+    +-------------------------+----------------+----------------+------------------+
+    | Freenove Projects Board                                                      |
+    |                                                                              |
+    | |Chapter06_04|                                                               |
+    +------------------------------------------------------------------------------+
 
 .. |Chapter21_00| image:: ../_static/imgs/21_Infrared_Remote/Chapter21_00.png
 .. |Chapter21_01| image:: ../_static/imgs/21_Infrared_Remote/Chapter21_01.png
@@ -51,19 +56,24 @@ Circuit
 
 Use pin 8 on the control board to connect IR receiver.
 
-+-------------------------+------------------------------------------------------------------------+
-| Schematic diagram       | Hardware connection                                                    |
-|                         |                                                                        |
-| |Chapter21_04|          | |Chapter21_06|                                                         |
-+-------------------------+------------------------------------------------------------------------+
-| Hardware connection                                                                              |
-|                                                                                                  |
-| |Chapter21_07|                                                                                   |
-|                                                                                                  |
-| Connect the infrared receiver to the IR interface on the control board.                          |
-|                                                                                                  |
-| Note: the head of the receiver should orient to the right.                                       |
-+--------------------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+------------------------------------------------------------------------+
+    | Schematic diagram       | Hardware connection                                                    |
+    |                         |                                                                        |
+    | |Chapter21_04|          | |Chapter21_06|                                                         |
+    +-------------------------+------------------------------------------------------------------------+
+    | Hardware connection                                                                              |
+    |                                                                                                  |
+    | |Chapter21_07|                                                                                   |
+    |                                                                                                  |
+    | Connect the infrared receiver to the IR interface on the control board.                          |
+    |                                                                                                  |
+    | Note: the head of the receiver should orient to the right.                                       |
+    +--------------------------------------------------------------------------------------------------+
 
 .. |Chapter21_04| image:: ../_static/imgs/21_Infrared_Remote/Chapter21_04.png
 .. |Chapter21_06| image:: ../_static/imgs/21_Infrared_Remote/Chapter21_06.png
@@ -81,14 +91,14 @@ Click “Add .ZIP Library...” and then find IRremote.zip in libraries folder (
 
 Now, write code to get the command sent from IR remote control, and send it to the serial port.
 
-.. literalinclude:: ../../../freenove_Kit/Sketches/Sketch_20.1_Get_Input_Characters/Sketch_20.1_Get_Input_Characters.ino
+.. literalinclude:: ../../../freenove_Kit/Sketches/Sketch_21.1_Infrared_Remote_Control/Sketch_21.1_Infrared_Remote_Control.ino
     :linenos: 
     :language: c
     :dedent:
 
 We use the IRrecv class provided by the IRremote library to control IR receiver in this code. As shown below, instantiate one IRrecv object, and the parameter represents the pin connected to the IR receiver.
 
-.. literalinclude:: ../../../freenove_Kit/Sketches/Sketch_20.1_Get_Input_Characters/Sketch_20.1_Get_Input_Characters.ino
+.. literalinclude:: ../../../freenove_Kit/Sketches/Sketch_21.1_Infrared_Remote_Control/Sketch_21.1_Infrared_Remote_Control.ino
     :linenos: 
     :language: c
     :dedent:
@@ -96,15 +106,23 @@ We use the IRrecv class provided by the IRremote library to control IR receiver 
 
 decode_results class provided by the IRremote library is used to save the results of IR control decoding.
 
-.. literalinclude:: ../../../freenove_Kit/Sketches/Sketch_20.1_Get_Input_Characters/Sketch_20.1_Get_Input_Characters.ino
+.. literalinclude:: ../../../freenove_Kit/Sketches/Sketch_21.1_Infrared_Remote_Control/Sketch_21.1_Infrared_Remote_Control.ino
     :linenos: 
     :language: c
     :dedent:
     :lines: 12-12
 
+Start the signal receiving in the setup() function
+
+.. literalinclude:: ../../../freenove_Kit/Sketches/Sketch_21.1_Infrared_Remote_Control/Sketch_21.1_Infrared_Remote_Control.ino
+    :linenos: 
+    :language: c
+    :dedent:
+    :lines: 17-17
+
 In the loop() function, decode the received signal, and sent it to computer through the serial port.
 
-.. literalinclude:: ../../../freenove_Kit/Sketches/Sketch_20.1_Get_Input_Characters/Sketch_20.1_Get_Input_Characters.ino
+.. literalinclude:: ../../../freenove_Kit/Sketches/Sketch_21.1_Infrared_Remote_Control/Sketch_21.1_Infrared_Remote_Control.ino
     :linenos: 
     :language: c
     :dedent:
@@ -120,36 +138,46 @@ Project 21.2 Control LED through Infrared Remote
 
 Now, let us try to control anLED through infrared remote.
 
-+-------------------------+----------------+----------------+------------------+
-| Control board x1        | USB cable x1   | Infrared       | Infrared remote  |
-|                         |                |                |                  |
-|                         |                | receiver x1    | control x1       |
-|                         |                |                |                  |
-| |Chapter06_00|          | |Chapter06_01| | |Chapter21_00| |  |Chapter21_01|  |
-+-------------------------+----------------+----------------+------------------+
-| Freenove Projects Board                                                      |
-|                                                                              |
-| |Chapter06_04|                                                               |
-+------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------+----------------+------------------+
+    | Control board x1        | USB cable x1   | Infrared       | Infrared remote  |
+    |                         |                |                |                  |
+    |                         |                | receiver x1    | control x1       |
+    |                         |                |                |                  |
+    | |Chapter06_00|          | |Chapter06_01| | |Chapter21_00| |  |Chapter21_01|  |
+    +-------------------------+----------------+----------------+------------------+
+    | Freenove Projects Board                                                      |
+    |                                                                              |
+    | |Chapter06_04|                                                               |
+    +------------------------------------------------------------------------------+
 
 Circuit
 ==========================================================
 
 Connect pin 12 on the control board to IR receiver to simulate a desk lamp. And drive buzzer through pin 13, drive LED through pin 5. 
 
-+-------------------------+----------------------------------+
-| Schematic diagram       | Hardware connection              |
-|                         |                                  |
-| |Chapter19_04|          | |Chapter19_05|                   |
-+-------------------------+----------------------------------+
-| Hardware connection                                        |
-|                                                            |
-| |Chapter19_06|                                             |
-+------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------------------------+
+    | Schematic diagram       | Hardware connection              |
+    |                         |                                  |
+    | |Chapter21_08|          | |Chapter21_09|                   |
+    +-------------------------+----------------------------------+
+    | Hardware connection                                        |
+    |                                                            |
+    | |Chapter21_10|                                             |
+    +------------------------------------------------------------+
 
-.. |Chapter19_04| image:: ../_static/imgs/19_Stepper_Motor/Chapter19_04.png
-.. |Chapter19_05| image:: ../_static/imgs/19_Stepper_Motor/Chapter19_05.png
-.. |Chapter19_06| image:: ../_static/imgs/19_Stepper_Motor/Chapter19_06.png
+.. |Chapter21_08| image:: ../_static/imgs/21_Infrared_Remote/Chapter21_08.png
+.. |Chapter21_09| image:: ../_static/imgs/21_Infrared_Remote/Chapter21_09.png
+.. |Chapter21_10| image:: ../_static/imgs/21_Infrared_Remote/Chapter21_10.png
 
 Sketch
 ====================================

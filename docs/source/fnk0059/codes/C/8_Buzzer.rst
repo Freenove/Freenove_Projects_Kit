@@ -14,15 +14,21 @@ First, let's study some knowledge about the active buzzer.
 Component List
 =======================================
 
-+-------------------------+----------------+
-| Control board x1        | USB cable x1   |
-|                         |                |
-| |Chapter01_00|          | |Chapter01_01| |
-+-------------------------+----------------+
-| Freenove Projects Board                  |
-|                                          |
-| |Chapter01_02|                           |
-+------------------------------------------+
+.. table:: 
+    :width: 80%
+    :widths: 1 1 
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------+
+    | Control board x1        | USB cable x1   |
+    |                         |                |
+    | |Chapter01_00|          | |Chapter01_01| |
+    +-------------------------+----------------+
+    | Freenove Projects Board                  |
+    |                                          |
+    | |Chapter01_02|                           |
+    +------------------------------------------+
 
 .. |Chapter01_00| image:: ../_static/imgs/1_LED_Blink/Chapter01_00.png
 .. |Chapter01_01| image:: ../_static/imgs/1_LED_Blink/Chapter01_01.png
@@ -59,7 +65,7 @@ A buzzer is an audio component. They are widely used in electronic devices such 
 
 Active buzzers are easier to use. Generally, they only make a specific sound frequency. Passive buzzers require an external circuit to make sounds, but passive buzzers can be controlled to make sounds of various frequencies. The resonant frequency of the passive buzzer in this Kit is 2kHz, which means the passive buzzer is the loudest when its resonant frequency is 2kHz.
 
-:red:`How to identify active and passive buzzer?`
+:combo:`red font-bolder:How to identify active and passive buzzer?`
 
 1.	As a rule, there is a label on an active buzzer covering the hole where sound is emitted, but there are exceptions to this rule.
 
@@ -85,15 +91,20 @@ Circuit
 
 Drive the active buzzer with pin7.
 
-+-------------------------+----------------------------------+
-| Schematic diagram       | Hardware connection              |
-|                         |                                  |
-| |Chapter08_05|          | |Chapter08_06|                   |
-+-------------------------+----------------------------------+
-| Hardware connection                                        |
-|                                                            |
-| |Chapter08_07|                                             |
-+------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------------+
+    | Schematic diagram       | Hardware connection  |
+    |                         |                      |
+    | |Chapter08_05|          | |Chapter08_06|       |
+    +-------------------------+----------------------+
+    | Hardware connection                            |
+    |                                                |
+    | |Chapter08_07|                                 |
+    +------------------------------------------------+
 
 .. |Chapter08_05| image:: ../_static/imgs/8_Buzzer/Chapter08_05.png
 .. |Chapter08_06| image:: ../_static/imgs/8_Buzzer/Chapter08_06.png
@@ -125,34 +136,40 @@ In the previous section, we have finished using transistor to drive an active bu
 Component List
 ================================
 
-+-------------------------+----------------+
-| Control board x1        | USB cable x1   |
-|                         |                |
-| |Chapter01_00|          | |Chapter01_01| |
-+-------------------------+----------------+
-| Freenove Projects Board                  |
-|                                          |
-| |Chapter01_02|                           |
-+------------------------------------------+
-
-.. |Chapter01_00| image:: ../_static/imgs/1_LED_Blink/Chapter01_00.png
-.. |Chapter01_01| image:: ../_static/imgs/1_LED_Blink/Chapter01_01.png
-.. |Chapter01_02| image:: ../_static/imgs/1_LED_Blink/Chapter01_02.png
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------+
+    | Control board x1        | USB cable x1   |
+    |                         |                |
+    | |Chapter01_00|          | |Chapter01_01| |
+    +-------------------------+----------------+
+    | Freenove Projects Board                  |
+    |                                          |
+    | |Chapter01_02|                           |
+    +------------------------------------------+
 
 Circuit
 ==========================================
 
 Use pin 6 port of control board to drive a passive buzzer.
 
-+-------------------------+----------------------------------+
-| Schematic diagram       | Hardware connection              |
-|                         |                                  |
-| |Chapter08_09|          | |Chapter08_10|                   |
-+-------------------------+----------------------------------+
-| Hardware connection                                        |
-|                                                            |
-| |Chapter08_11|                                             |
-+------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------------------------+
+    | Schematic diagram       | Hardware connection              |
+    |                         |                                  |
+    | |Chapter08_09|          | |Chapter08_10|                   |
+    +-------------------------+----------------------------------+
+    | Hardware connection                                        |
+    |                                                            |
+    | |Chapter08_11|                                             |
+    +------------------------------------------------------------+
 
 .. |Chapter08_09| image:: ../_static/imgs/8_Buzzer/Chapter08_09.png
 .. |Chapter08_10| image:: ../_static/imgs/8_Buzzer/Chapter08_10.png

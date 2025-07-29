@@ -12,15 +12,21 @@ We will use the Freenove Projects Board to get the status of the push button swi
 Component List
 ================================
 
-+-------------------------+----------------+
-| Control board x1        | USB cable x1   |
-|                         |                |
-| |Chapter01_00|          | |Chapter01_01| |
-+-------------------------+----------------+
-| Freenove Projects Board                  |
-|                                          |
-| |Chapter01_02|                           |
-+------------------------------------------+
+.. table:: 
+    :width: 80%
+    :widths: 1 1
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------+
+    | Control board x1        | USB cable x1   |
+    |                         |                |
+    | |Chapter01_00|          | |Chapter01_01| |
+    +-------------------------+----------------+
+    | Freenove Projects Board                  |
+    |                                          |
+    | |Chapter01_02|                           |
+    +------------------------------------------+
 
 .. |Chapter01_00| image:: ../_static/imgs/1_LED_Blink/Chapter01_00.png
 .. |Chapter01_01| image:: ../_static/imgs/1_LED_Blink/Chapter01_01.png
@@ -52,11 +58,11 @@ Use pin 2 of control board to detect the status of push button, and pin 13 to dr
 .. list-table:: 
     :width: 80%
     :align: center
-    :class: product-table
+    :class: table-line
 
-    *   -   Schematic diagram
+    *   -   **Schematic diagram**
     *   -   |Chapter03_02|
-    *   -   Hardware connection
+    *   -   **Hardware connection**
 
             Insert the Control Board upside down to the Freenove Projects Board, and then turn the corresponding 
             
@@ -64,7 +70,7 @@ Use pin 2 of control board to detect the status of push button, and pin 13 to dr
 
     *   -   |Chapter03_03|
 
-            :red:`For other functions that are not being used, it is recommended to turn their DIP switches to the left.`
+            :combo:`red font-bolder:For other functions that are not being used, it is recommended to turn their DIP switches to the left.`
 
 .. |Chapter03_02| image:: ../_static/imgs/3_Control_LED_with_Push_Button_Switch/Chapter03_02.png
 .. |Chapter03_03| image:: ../_static/imgs/3_Control_LED_with_Push_Button_Switch/Chapter03_03.png

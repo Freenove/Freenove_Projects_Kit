@@ -12,15 +12,20 @@ First, make a simple voltmeter.
 Component list
 ======================================
 
-+-------------------------+----------------+
-| Control board x1        | USB cable x1   |
-|                         |                |
-| |Chapter01_00|          | |Chapter01_01| |
-+-------------------------+----------------+
-| Freenove Projects Board                  |
-|                                          |
-| |Chapter01_02|                           |
-+------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------+
+    | Control board x1        | USB cable x1   |
+    |                         |                |
+    | |Chapter01_00|          | |Chapter01_01| |
+    +-------------------------+----------------+
+    | Freenove Projects Board                  |
+    |                                          |
+    | |Chapter01_02|                           |
+    +------------------------------------------+
 
 .. |Chapter01_00| image:: ../_static/imgs/1_LED_Blink/Chapter01_00.png
 .. |Chapter01_01| image:: ../_static/imgs/1_LED_Blink/Chapter01_01.png
@@ -31,19 +36,24 @@ Circuit
 
 Use pin A1 on the control board to detect the voltage of rotary potentiometer.
 
-+-------------------------+-----------------------------------------------------------+
-| Schematic diagram       | Hardware connection                                       |
-|                         |                                                           |
-| |Chapter01_00p|         | |Chapter01_01p|                                           |
-+-------------------------+-----------------------------------------------------------+
-| Hardware connection                                                                 |
-|                                                                                     |
-| Insert the Control Board to Freenove Projects Board, and then turn the corresponding|
-|                                                                                     |
-| switch to the right(ON).                                                            |
-|                                                                                     |
-| |Chapter01_02p|                                                                     |
-+-------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+-----------------------------------------------------------+
+    | Schematic diagram       | Hardware connection                                       |
+    |                         |                                                           |
+    | |Chapter01_00p|         | |Chapter01_01p|                                           |
+    +-------------------------+-----------------------------------------------------------+
+    | Hardware connection                                                                 |
+    |                                                                                     |
+    | Insert the Control Board to Freenove Projects Board, and then turn the corresponding|
+    |                                                                                     |
+    | switch to the right(ON).                                                            |
+    |                                                                                     |
+    | |Chapter01_02p|                                                                     |
+    +-------------------------------------------------------------------------------------+
 
 .. |Chapter01_00p| image:: ../_static/imgs/1_Voltmeter/Chapter01_00.png
 .. |Chapter01_01p| image:: ../_static/imgs/1_Voltmeter/Chapter01_01.png
@@ -109,34 +119,44 @@ Now, let's make a dual channel voltmeter.
 Component list
 ======================================
 
-+-------------------------+----------------+
-| Control board x1        | USB cable x1   |
-|                         |                |
-| |Chapter01_00|          | |Chapter01_01| |
-+-------------------------+----------------+
-| Freenove Projects Board                  |
-|                                          |
-| |Chapter01_02|                           |
-+------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------+
+    | Control board x1        | USB cable x1   |
+    |                         |                |
+    | |Chapter01_00|          | |Chapter01_01| |
+    +-------------------------+----------------+
+    | Freenove Projects Board                  |
+    |                                          |
+    | |Chapter01_02|                           |
+    +------------------------------------------+
 
 Circuit
 =============================
 
 Use pin A1 on the control board to detect the voltage of rotary potentiometer.
 
-+-------------------------+-----------------------------------------------------------+
-| Schematic diagram       | Hardware connection                                       |
-|                         |                                                           |
-| |Chapter01_07p|         | |Chapter01_08p|                                           |
-+-------------------------+-----------------------------------------------------------+
-| Hardware connection                                                                 |
-|                                                                                     |
-| Insert the Control Board to Freenove Projects Board, and then turn the corresponding|
-|                                                                                     |
-| switch to the right(ON).                                                            |
-|                                                                                     |
-| |Chapter01_09p|                                                                     |
-+-------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+-----------------------------------------------------------+
+    | Schematic diagram       | Hardware connection                                       |
+    |                         |                                                           |
+    | |Chapter01_07p|         | |Chapter01_08p|                                           |
+    +-------------------------+-----------------------------------------------------------+
+    | Hardware connection                                                                 |
+    |                                                                                     |
+    | Insert the Control Board to Freenove Projects Board, and then turn the corresponding|
+    |                                                                                     |
+    | switch to the right(ON).                                                            |
+    |                                                                                     |
+    | |Chapter01_09p|                                                                     |
+    +-------------------------------------------------------------------------------------+
 
 .. |Chapter01_07p| image:: ../_static/imgs/1_Voltmeter/Chapter01_07.png
 .. |Chapter01_08p| image:: ../_static/imgs/1_Voltmeter/Chapter01_08.png

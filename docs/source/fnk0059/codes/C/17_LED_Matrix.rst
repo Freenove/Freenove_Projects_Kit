@@ -7,15 +7,20 @@ In the previous section, we have used 74HC595 to control 8 LEDs of the LED bar g
 Component List
 ===========================================
 
-+-------------------------+------------------------------+-------------------------------+
-| Control board x1        | USB cable x1                 | Digital Tube x1               |
-|                         |                              |                               |
-| |Chapter06_00|          | |Chapter06_01|               | |Chapter17_00|                |
-+-------------------------+------------------------------+-------------------------------+
-| Freenove Projects Board                                                                |
-|                                                                                        |
-| |Chapter06_04|                                                                         |
-+----------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+---------------------+----------------------+
+    | Control board x1        | USB cable x1        | Digital Tube x1      |
+    |                         |                     |                      |
+    | |Chapter06_00|          | |Chapter06_01|      | |Chapter17_00|       |
+    +-------------------------+---------------------+----------------------+
+    | Freenove Projects Board                                              |
+    |                                                                      |
+    | |Chapter06_04|                                                       |
+    +----------------------------------------------------------------------+
 
 .. |Chapter06_00| image:: ../_static/imgs/6_RGB_LED/Chapter06_00.png
 .. |Chapter06_01| image:: ../_static/imgs/6_RGB_LED/Chapter06_01.png
@@ -45,22 +50,29 @@ Here is how a Common Anode LED Matrix works. First, choose 16 ports on RPI board
 .. image:: ../_static/imgs/17_LED_Matrix/Chapter17_03.png
     :align: center
 
-.. list-table:: 
-    :width: 100%
+.. table:: 
     :align: center
-    :class: product-table
-
-    *   -   Column 
-        -   Binary
-        -   Hexadecimal
-
-    *   -   1
-        -   2
-        -   Positive pole of power supply with a voltage of 5V
-
-    *   -   GND
-        -   2
-        -   Negative pole of power supply
+    :class: zebra text-center
+    
+    +--------+-----------+-------------+
+    | Column |  Binary   | Hexadecimal |
+    +========+===========+=============+
+    | 1      | 0001 1100 | 0x1c        |
+    +--------+-----------+-------------+
+    | 2      | 0010 0010 | 0x22        |
+    +--------+-----------+-------------+
+    | 3      | 0101 0001 | 0x51        |
+    +--------+-----------+-------------+
+    | 4      | 0100 0101 | 0x45        |
+    +--------+-----------+-------------+
+    | 5      | 0100 0101 | 0x45        |
+    +--------+-----------+-------------+
+    | 6      | 0101 0001 | 0x51        |
+    +--------+-----------+-------------+
+    | 7      | 0010 0010 | 0x22        |
+    +--------+-----------+-------------+
+    | 8      | 0001 1100 | 0x1c        |
+    +--------+-----------+-------------+
 
 Scanning rows is another option to display on an LED Matrix (dot matrix grid). Whether scanning by row or column, 16 GPIO is required. In order to save GPIO ports of control board, two 74HC595 IC Chips are used in the circuit. 
 
@@ -69,15 +81,20 @@ Circuit
 
 Use pin 11, 12, 13 on control board to control the 74HC595. And connect 74HC595 to the 8 anode pins of LED Matrix, in the meanwhile, connect 8 digitals port on control board to the 8 cathode pins of LED Matrix.
 
-+-------------------------+----------------------------------+
-| Schematic diagram       | Hardware connection              |
-|                         |                                  |
-| |Chapter17_04|          | |Chapter17_05|                   |
-+-------------------------+----------------------------------+
-| Hardware connection                                        |
-|                                                            |
-| |Chapter17_06|                                             |
-+------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------------------------+
+    | Schematic diagram       | Hardware connection              |
+    |                         |                                  |
+    | |Chapter17_04|          | |Chapter17_05|                   |
+    +-------------------------+----------------------------------+
+    | Hardware connection                                        |
+    |                                                            |
+    | |Chapter17_06|                                             |
+    +------------------------------------------------------------+
 
 .. |Chapter17_04| image:: ../_static/imgs/17_LED_Matrix/Chapter17_04.png
 .. |Chapter17_05| image:: ../_static/imgs/17_LED_Matrix/Chapter17_05.png
@@ -135,7 +152,11 @@ Define a function to send the data of the LEDs that need to be lit for each row 
     "a" will be assigned to 0. The calculation procedure is as follows:
 
         1(00000001)
+
       & 2(00000010)
+
+    \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
+
         0(00000000)
 
     Negate (~) is used to negate a number, for example:
@@ -144,7 +165,9 @@ Define a function to send the data of the LEDs that need to be lit for each row 
     
     "a" will be assigned to 240. The calculation procedure is as follows:
     
-    - 15(00001111)
+    ~ 15(00001111)
+
+    \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
     
       240(11110000)
 

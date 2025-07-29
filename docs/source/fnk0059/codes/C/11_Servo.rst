@@ -12,15 +12,20 @@ First, let's get the servo to rotate.
 Component List
 =====================================
 
-+-------------------------+------------------------------+-------------------------------+
-| Control board x1        | USB cable x1                 | Servo x1                      |
-|                         |                              |                               |
-| |Chapter06_00|          | |Chapter06_01|               | |Chapter11_00|                |
-+-------------------------+------------------------------+-------------------------------+
-| Freenove Projects Board                                                                |
-|                                                                                        |
-| |Chapter06_04|                                                                         |
-+----------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+------------------------------+-------------------------------+
+    | Control board x1        | USB cable x1                 | Servo x1                      |
+    |                         |                              |                               |
+    | |Chapter06_00|          | |Chapter06_01|               | |Chapter11_00|                |
+    +-------------------------+------------------------------+-------------------------------+
+    | Freenove Projects Board                                                                |
+    |                                                                                        |
+    | |Chapter06_04|                                                                         |
+    +----------------------------------------------------------------------------------------+
 
 .. |Chapter06_00| image:: ../_static/imgs/6_RGB_LED/Chapter06_00.png
 .. |Chapter06_01| image:: ../_static/imgs/6_RGB_LED/Chapter06_01.png
@@ -41,9 +46,8 @@ Servo is a compact package which consists of a DC Motor, a set of reduction gear
 We will use a 50Hz PWM signal with a duty cycle in a certain range to drive the Servo. The lasting time 0.5ms-2.5ms of PWM single cycle high level corresponds to the Servo angle 0 degrees - 180 degrees linearly. Part of the corresponding values are as follows:
 
 .. list-table:: 
-    :width: 100%
     :align: center
-    :class: product-table
+    :class: zebra
 
     *   -   High level time
         -   Servo angle
@@ -73,14 +77,14 @@ Use pin 3 of the control board to drive the servo.
 Pay attention to the color of servo lead wire: VCC (red), GND (brown), and signal line (orange). The wrong connection can cause damage to servo. 
 
 .. list-table:: 
-    :width: 100%
+    :width: 80%
     :align: center
-    :class: product-table
+    :class: table-line
 
-    *   -   Schematic diagram
-    *   -   |Chapter11_02|
-    *   -   Hardware connection
-    *   -   |Chapter11_03|
+    * - **Schematic diagram**
+    * - |Chapter11_02|
+    * - **Hardware connection**
+    * - |Chapter11_03|
 
 .. |Chapter11_02| image:: ../_static/imgs/11_Servo/Chapter11_02.png
 .. |Chapter11_03| image:: ../_static/imgs/11_Servo/Chapter11_03.png
@@ -161,30 +165,40 @@ In the previous section, we've made the servo sweep continuously. Now, we will u
 Component List
 =====================================
 
-+-------------------------+------------------------------+-------------------------------+
-| Control board x1        | USB cable x1                 | Servo x1                      |
-|                         |                              |                               |
-| |Chapter06_00|          | |Chapter06_01|               | |Chapter11_00|                |
-+-------------------------+------------------------------+-------------------------------+
-| Freenove Projects Board                                                                |
-|                                                                                        |
-| |Chapter06_04|                                                                         |
-+----------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+------------------------------+-------------------------------+
+    | Control board x1        | USB cable x1                 | Servo x1                      |
+    |                         |                              |                               |
+    | |Chapter06_00|          | |Chapter06_01|               | |Chapter11_00|                |
+    +-------------------------+------------------------------+-------------------------------+
+    | Freenove Projects Board                                                                |
+    |                                                                                        |
+    | |Chapter06_04|                                                                         |
+    +----------------------------------------------------------------------------------------+
 
 Circuit
 ====================================
 
 Use pin A1 of the control board to detect the voltage of rotary potentiometer, and pin 3 to drive the servo.
 
-+-------------------------+----------------------------------+
-| Schematic diagram       | Hardware connection              |
-|                         |                                  |
-| |Chapter11_05|          | |Chapter11_06|                   |
-+-------------------------+----------------------------------+
-| Hardware connection                                        |
-|                                                            |
-| |Chapter11_07|                                             |
-+------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------------------------+
+    | Schematic diagram       | Hardware connection              |
+    |                         |                                  |
+    | |Chapter11_05|          | |Chapter11_06|                   |
+    +-------------------------+----------------------------------+
+    | Hardware connection                                        |
+    |                                                            |
+    | |Chapter11_07|                                             |
+    +------------------------------------------------------------+
 
 .. |Chapter11_05| image:: ../_static/imgs/11_Servo/Chapter11_05.png
 .. |Chapter11_06| image:: ../_static/imgs/11_Servo/Chapter11_06.png

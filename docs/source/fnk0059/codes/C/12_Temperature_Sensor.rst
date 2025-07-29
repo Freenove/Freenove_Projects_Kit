@@ -9,15 +9,20 @@ Project 12.1 Detect the Temperature
 
 We will use a thermistor to detect the ambient temperature.
 
-+-------------------------+----------------+
-| Control board x1        | USB cable x1   |
-|                         |                |
-| |Chapter01_00|          | |Chapter01_01| |
-+-------------------------+----------------+
-| Freenove Projects Board                  |
-|                                          |
-| |Chapter01_02|                           |
-+------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------+
+    | Control board x1        | USB cable x1   |
+    |                         |                |
+    | |Chapter01_00|          | |Chapter01_01| |
+    +-------------------------+----------------+
+    | Freenove Projects Board                  |
+    |                                          |
+    | |Chapter01_02|                           |
+    +------------------------------------------+
 
 .. |Chapter01_00| image:: ../_static/imgs/1_LED_Blink/Chapter01_00.png
 .. |Chapter01_01| image:: ../_static/imgs/1_LED_Blink/Chapter01_01.png
@@ -36,7 +41,9 @@ Thermistor is a temperature sensitive resistor. When it senses a change in tempe
 
 The relationship between resistance value and temperature of thermistor is:
 
-    Rt=R*EXP[B*(1/T2-1/T1)]
+.. math::
+
+    \boldsymbol{R_t = R \cdot \exp\left[B\left(\frac{1}{T_2} - \frac{1}{T_1}\right)\right]}
 
 Where:
 
@@ -64,15 +71,20 @@ Circuit
 
 Use pin A0 on the control board to detect the voltage of thermistor. 
 
-+-------------------------+----------------------------------+
-| Schematic diagram       | Hardware connection              |
-|                         |                                  |
-| |Chapter12_02|          | |Chapter12_03|                   |
-+-------------------------+----------------------------------+
-| Hardware connection                                        |
-|                                                            |
-| |Chapter12_04|                                             |
-+------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------------------------+
+    | Schematic diagram       | Hardware connection              |
+    |                         |                                  |
+    | |Chapter12_02|          | |Chapter12_03|                   |
+    +-------------------------+----------------------------------+
+    | Hardware connection                                        |
+    |                                                            |
+    | |Chapter12_04|                                             |
+    +------------------------------------------------------------+
 
 .. |Chapter12_02| image:: ../_static/imgs/12_Temperature_Sensor/Chapter12_02.png
 .. |Chapter12_03| image:: ../_static/imgs/12_Temperature_Sensor/Chapter12_03.png

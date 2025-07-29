@@ -12,15 +12,21 @@ ADC is used to convert analog signals into digital signals. The control chip on 
 Component List
 ================================
 
-+-------------------------+----------------+
-| Control board x1        | USB cable x1   |
-|                         |                |
-| |Chapter01_00|          | |Chapter01_01| |
-+-------------------------+----------------+
-| Freenove Projects Board                  |
-|                                          |
-| |Chapter01_02|                           |
-+------------------------------------------+
+.. table:: 
+    :width: 80%
+    :widths: 1 1
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------+
+    | Control board x1        | USB cable x1   |
+    |                         |                |
+    | |Chapter01_00|          | |Chapter01_01| |
+    +-------------------------+----------------+
+    | Freenove Projects Board                  |
+    |                                          |
+    | |Chapter01_02|                           |
+    +------------------------------------------+
 
 .. |Chapter01_00| image:: ../_static/imgs/1_LED_Blink/Chapter01_00.png
 .. |Chapter01_01| image:: ../_static/imgs/1_LED_Blink/Chapter01_01.png
@@ -76,19 +82,24 @@ Circuit
 
 Use pin A1 on the control board to detect the voltage of rotary potentiometer.
 
-+-------------------------+-----------------------------------------------------------+
-| Schematic diagram       | Hardware connection                                       |
-|                         |                                                           |
-| |Chapter05_04|          | |Chapter05_05|                                            |
-+-------------------------+-----------------------------------------------------------+
-| Hardware connection                                                                 |
-|                                                                                     |
-| Insert the Control Board to Freenove Projects Board, and then turn the corresponding|
-|                                                                                     |
-| switch to the right(ON).                                                            |
-|                                                                                     |
-| |Chapter05_06|                                                                      |
-+-------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+-----------------------------------------------------------+
+    | Schematic diagram       | Hardware connection                                       |
+    |                         |                                                           |
+    | |Chapter05_04|          | |Chapter05_05|                                            |
+    +-------------------------+-----------------------------------------------------------+
+    | Hardware connection                                                                 |
+    |                                                                                     |
+    | Insert the Control Board to Freenove Projects Board, and then turn the corresponding|
+    |                                                                                     |
+    | switch to the right(ON).                                                            |
+    |                                                                                     |
+    | |Chapter05_06|                                                                      |
+    +-------------------------------------------------------------------------------------+
 
 .. |Chapter05_04| image:: ../_static/imgs/5_ADC/Chapter05_04.png
 .. |Chapter05_05| image:: ../_static/imgs/5_ADC/Chapter05_05.png
@@ -124,34 +135,45 @@ In the previous section, we have finished reading ADC value and converting it in
 Component List
 ================================
 
-+-------------------------+----------------+
-| Control board x1        | USB cable x1   |
-|                         |                |
-| |Chapter01_00|          | |Chapter01_01| |
-+-------------------------+----------------+
-| Freenove Projects Board                  |
-|                                          |
-| |Chapter01_02|                           |
-+------------------------------------------+
+.. table:: 
+    :width: 80%
+    :widths: 1 1
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------+
+    | Control board x1        | USB cable x1   |
+    |                         |                |
+    | |Chapter01_00|          | |Chapter01_01| |
+    +-------------------------+----------------+
+    | Freenove Projects Board                  |
+    |                                          |
+    | |Chapter01_02|                           |
+    +------------------------------------------+
 
 Circuit
 =========================
 
 Use pin A1 on the control board to detect the voltage of rotary potentiometer.
 
-+-------------------------+-----------------------------------------------------------+
-| Schematic diagram       | Hardware connection                                       |
-|                         |                                                           |
-| |Chapter05_08|          | |Chapter05_09|                                            |
-+-------------------------+-----------------------------------------------------------+
-| Hardware connection                                                                 |
-|                                                                                     |
-| Insert the Control Board to Freenove Projects Board, and then turn the corresponding|
-|                                                                                     |
-| switch to the right(ON).                                                            |
-|                                                                                     |
-| |Chapter05_10|                                                                      |
-+-------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+-----------------------------------------------------------+
+    | Schematic diagram       | Hardware connection                                       |
+    |                         |                                                           |
+    | |Chapter05_08|          | |Chapter05_09|                                            |
+    +-------------------------+-----------------------------------------------------------+
+    | Hardware connection                                                                 |
+    |                                                                                     |
+    | Insert the Control Board to Freenove Projects Board, and then turn the corresponding|
+    |                                                                                     |
+    | switch to the right(ON).                                                            |
+    |                                                                                     |
+    | |Chapter05_10|                                                                      |
+    +-------------------------------------------------------------------------------------+
 
 .. |Chapter05_08| image:: ../_static/imgs/5_ADC/Chapter05_08.png
 .. |Chapter05_09| image:: ../_static/imgs/5_ADC/Chapter05_09.png
@@ -175,12 +197,12 @@ Verify and upload the code, rotate the rotary potentiometer shaft, you will see 
 .. list-table:: 
     :width: 80%
     :align: center
-    :class: product-table
+    :class: table-line
 
-    *   -   |Chapter05_11|
-        -   |Chapter05_12|
-    *   -   |Chapter05_13|
-        -   |Chapter05_14|
+    * - |Chapter05_11|
+      - |Chapter05_12|
+    * - |Chapter05_13|
+      - |Chapter05_14|
 
 .. |Chapter05_11| image:: ../_static/imgs/5_ADC/Chapter05_11.png
 .. |Chapter05_12| image:: ../_static/imgs/5_ADC/Chapter05_12.png
@@ -196,15 +218,21 @@ Project 5.3 Control LED by Photoresistor
 
 In the previous section, we have finished reading ADC value and converted it into LED brightness. There are many components, especially the sensor whose output is analog. Now, we will try to use photoresistor to measure the brightness of light.
 
-+-------------------------+----------------+
-| Control board x1        | USB cable x1   |
-|                         |                |
-| |Chapter01_00|          | |Chapter01_01| |
-+-------------------------+----------------+
-| Freenove Projects Board                  |
-|                                          |
-| |Chapter01_02|                           |
-+------------------------------------------+
+.. table:: 
+    :width: 80%
+    :widths: 1 1
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------+
+    | Control board x1        | USB cable x1   |
+    |                         |                |
+    | |Chapter01_00|          | |Chapter01_01| |
+    +-------------------------+----------------+
+    | Freenove Projects Board                  |
+    |                                          |
+    | |Chapter01_02|                           |
+    +------------------------------------------+
 
 Component Knowledge
 ==========================
@@ -229,19 +257,24 @@ Circuit
 
 Use pin A0 on control board to detect the voltage of photoresistor, and use pin 6 to control one LED.
 
-+-------------------------+-----------------------------------------------------------+
-| Schematic diagram       | Hardware connection                                       |
-|                         |                                                           |
-| |Chapter05_17|          | |Chapter05_18|                                            |
-+-------------------------+-----------------------------------------------------------+
-| Hardware connection                                                                 |
-|                                                                                     |
-| Insert the Control Board to Freenove Projects Board, and then turn the corresponding|
-|                                                                                     |
-| switch to the right(ON).                                                            |
-|                                                                                     |
-| |Chapter05_19|                                                                      |
-+-------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+-----------------------------------------------------------+
+    | Schematic diagram       | Hardware connection                                       |
+    |                         |                                                           |
+    | |Chapter05_17|          | |Chapter05_18|                                            |
+    +-------------------------+-----------------------------------------------------------+
+    | Hardware connection                                                                 |
+    |                                                                                     |
+    | Insert the Control Board to Freenove Projects Board, and then turn the corresponding|
+    |                                                                                     |
+    | switch to the right(ON).                                                            |
+    |                                                                                     |
+    | |Chapter05_19|                                                                      |
+    +-------------------------------------------------------------------------------------+
 
 .. |Chapter05_17| image:: ../_static/imgs/5_ADC/Chapter05_17.png
 .. |Chapter05_18| image:: ../_static/imgs/5_ADC/Chapter05_18.png

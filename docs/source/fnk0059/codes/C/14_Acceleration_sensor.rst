@@ -12,15 +12,20 @@ We will use serial port to get the data of MPU6050 module.
 Component List
 ===============================================
 
-+-------------------------+------------------------------+-------------------------------+
-| Control board x1        | USB cable x1                 | MPU6050 x1                    |
-|                         |                              |                               |
-| |Chapter06_00|          | |Chapter06_01|               | |Chapter14_00|                |
-+-------------------------+------------------------------+-------------------------------+
-| Freenove Projects Board                                                                |
-|                                                                                        |
-| |Chapter06_04|                                                                         |
-+----------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+------------------------------+-------------------------------+
+    | Control board x1        | USB cable x1                 | MPU6050 x1                    |
+    |                         |                              |                               |
+    | |Chapter06_00|          | |Chapter06_01|               | |Chapter14_00|                |
+    +-------------------------+------------------------------+-------------------------------+
+    | Freenove Projects Board                                                                |
+    |                                                                                        |
+    | |Chapter06_04|                                                                         |
+    +----------------------------------------------------------------------------------------+
 
 .. |Chapter06_00| image:: ../_static/imgs/6_RGB_LED/Chapter06_00.png
 .. |Chapter06_01| image:: ../_static/imgs/6_RGB_LED/Chapter06_01.png
@@ -46,9 +51,9 @@ MPU6050 Sensor Module is a complete 6-axis Motion Tracking Device. It combines a
 The port description of the MPU6050 module is as follows:
 
 .. list-table:: 
-    :width: 100%
     :align: center
-    :class: product-table
+    :class: zebra
+    :header-rows: 1
 
     *   -   Pin name
         -   Pin number
@@ -100,14 +105,14 @@ Circuit
 Use pin A4/SDA, pin A5/SCL port on the control board to communicate with MPU6050 module. 
 
 .. list-table:: 
-    :width: 100%
+    :width: 80%
     :align: center
-    :class: product-table
+    :class: table-line
 
-    *   -   Schematic diagram
-    *   -   |Chapter14_02|
-    *   -   Hardware connection
-    *   -   |Chapter14_03|
+    * - **Schematic diagram**
+    * - |Chapter14_02|
+    * - **Hardware connection**
+    * - |Chapter14_03|
 
 .. |Chapter14_02| image:: ../_static/imgs/14_Acceleration_sensor/Chapter14_02.png
 .. |Chapter14_03| image:: ../_static/imgs/14_Acceleration_sensor/Chapter14_03.png
@@ -120,7 +125,7 @@ Acceleration_Detection
 
 Library is a collection of code. We can use code provided by libraries to make programming simple.
 
-Click “Add .ZIP Library...” and then find **I2Cdev.zip** and MPU6050.zip in libraries folder (this folder is in the folder unzipped form the ZIP file we provided). These libraries make it easy to use MPU6050 module.
+Click “Add .ZIP Library...” and then find **I2Cdev.zip** and **MPU6050.zip** in libraries folder (this folder is in the folder unzipped form the ZIP file we provided). These libraries make it easy to use MPU6050 module.
 
 .. image:: ../_static/imgs/14_Acceleration_sensor/Chapter14_03.png
     :align: center
@@ -203,7 +208,7 @@ Then, convert the data and send them to the serial port. For the conversion from
     
     A pointer type variable points to an address. When we define it, we need to add "*" in front of it, for example:
     
-    int *a;
+    int \*a;
     
     When the function's parameter is pointer type, and the common variable works as parameter of the function, the & operator need to be added in front of the parameter.
 

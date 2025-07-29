@@ -1,5 +1,5 @@
 ##############################################################################
-Chapter
+Chapter LEDPixel
 ##############################################################################
 
 This chapter will help you learn to use a more convenient WS2812 LED, which requires only one GPIO control and can be connected in infinite series in theory. Each LED can be controlled independently.
@@ -12,19 +12,24 @@ Learn the basic usage of LEDPixel and make it blink red, green, blue and white l
 Component List
 ===========================
 
-+-------------------------+------------------------------+-------------------------------+
-| Control board x1        | USB cable x1                 | LEDPixel x1                   |
-|                         |                              |                               |
-| |Chapter06_00|          | |Chapter06_01|               | |Chapter07_00|                |
-+-------------------------+------------------------------+-------------------------------+
-| Jumper Wire x4                                                                         |
-|                                                                                        |
-| |Chapter06_03|                                                                         |
-+----------------------------------------------------------------------------------------+
-| Freenove Projects Board                                                                |
-|                                                                                        |
-| |Chapter06_04|                                                                         |
-+----------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+-------------------------+----------------------+
+    | Control board x1        | USB cable x1            | LEDPixel x1          |
+    |                         |                         |                      |
+    | |Chapter06_00|          | |Chapter06_01|          | |Chapter07_00|       |
+    +-------------------------+-------------------------+----------------------+
+    | Jumper Wire x3                                                           |
+    |                                                                          |
+    | |Chapter06_03|                                                           |
+    +--------------------------------------------------------------------------+
+    | Freenove Projects Board                                                  |
+    |                                                                          |
+    | |Chapter06_04|                                                           |
+    +--------------------------------------------------------------------------+
 
 .. |Chapter06_00| image:: ../_static/imgs/6_RGB_LED/Chapter06_00.png
 .. |Chapter06_01| image:: ../_static/imgs/6_RGB_LED/Chapter06_01.png
@@ -36,6 +41,7 @@ Related knowledge
 ===========================
 
 Freenove 8 RGB LED Module  
+------------------------------
 
 The Freenove 8 RGB LED Module is as below. 
 
@@ -53,31 +59,36 @@ And you can also control many modules at the same time. Just connect OUT pin of 
 
 Pin description:
 
-+---------------------------------------+---------------------------------------+
-|                  (IN)                 |                 (OUT)                 |
-+========+==============================+========+==============================+
-| symbol | Function                     | symbol | Function                     |
-+--------+------------------------------+--------+------------------------------+
-| S      | Input control signal         | S      | Output control signal        |
-+--------+------------------------------+--------+------------------------------+
-| V      | Power supply pin, +3.5V~5.5V | V      | Power supply pin, +3.5V~5.5V |
-+--------+------------------------------+--------+------------------------------+
-| G      | GND                          | G      | GND                          |
-+--------+------------------------------+--------+------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: zebra
+    
+    +---------------------------------------+---------------------------------------+
+    |                  (IN)                 |                 (OUT)                 |
+    +========+==============================+========+==============================+
+    | symbol | Function                     | symbol | Function                     |
+    +--------+------------------------------+--------+------------------------------+
+    | S      | Input control signal         | S      | Output control signal        |
+    +--------+------------------------------+--------+------------------------------+
+    | V      | Power supply pin, +3.5V~5.5V | V      | Power supply pin, +3.5V~5.5V |
+    +--------+------------------------------+--------+------------------------------+
+    | G      | GND                          | G      | GND                          |
+    +--------+------------------------------+--------+------------------------------+
 
 Circuit
 =============================
 
 .. list-table:: 
-    :width: 100%
+    :width: 80%
     :align: center
-    :class: product-table
+    :class: table-line
 
-    *   -   Schematic diagram
-    *   -   |Chapter07_03|
-    *   -   Hardware connection
-    *   -   |Chapter07_04|
-    *   -   |Chapter07_05|
+    * - **Schematic diagram**
+    * - |Chapter07_03|
+    * - **Hardware connection**
+    * - |Chapter07_04|
+    * - |Chapter07_05|
 
 .. |Chapter07_03| image:: ../_static/imgs/7_LEDPixel/Chapter07_03.png
 .. |Chapter07_04| image:: ../_static/imgs/7_LEDPixel/Chapter07_04.png
@@ -95,7 +106,7 @@ How to install the library
 
 There are two ways to add libraries.
 
-The first way, open the Arduino IDE, click Tools Manage Libraries.
+The first way, open the Arduino IDE, click Tools **->** Manage Libraries.
 
 .. image:: ../_static/imgs/7_LEDPixel/Chapter07_06.png
     :align: center     
@@ -241,17 +252,25 @@ Project 7.2 Rainbow Light
 
 In the previous project, we have mastered the use of LEDPixel. This project will make a slightly complicated rainbow light. The component list and the circuit are exactly the same as the project LEDPixel.
 
-+-------------------------+----------------------+
-| Control board x1        | USB cable x1         |
-|                         |                      |
-| |Chapter07_10|          | |Chapter07_11|       |
-+-------------------------+----------------------+
-| Jumper Wire x4                                 |
-|                                                |
-| |Chapter07_12|                                 |
-+------------------------------------------------+
-| |Chapter07_13|                                 |
-+------------------------------------------------+
+Circuit
+========================================
+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------------+
+    | Schematic diagram       | Hardware connection  |
+    |                         |                      |
+    | |Chapter07_10|          | |Chapter07_11|       |
+    +-------------------------+----------------------+
+    | Hardware connection                            |
+    |                                                |
+    | |Chapter07_12|                                 |
+    +------------------------------------------------+
+    | |Chapter07_13|                                 |
+    +------------------------------------------------+
 
 .. |Chapter07_10| image:: ../_static/imgs/7_LEDPixel/Chapter07_10.png
 .. |Chapter07_11| image:: ../_static/imgs/7_LEDPixel/Chapter07_11.png

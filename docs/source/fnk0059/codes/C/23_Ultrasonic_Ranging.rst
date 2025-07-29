@@ -12,19 +12,24 @@ In this project, we use ultrasonic ranging module to measure distance, and print
 Component List
 ============================================
 
-+-------------------------+------------------------------+-------------------------------+
-| Control board x1        | USB cable x1                 | Ultrasonic module x1          |
-|                         |                              |                               |
-| |Chapter06_00|          | |Chapter06_01|               | |Chapter23_00|                |
-+-------------------------+------------------------------+-------------------------------+
-| Jumper Wire x4                                                                         |
-|                                                                                        |
-| |Chapter06_03|                                                                         |
-+----------------------------------------------------------------------------------------+
-| Freenove Projects Board                                                                |
-|                                                                                        |
-| |Chapter06_04|                                                                         |
-+----------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+------------------------------+-------------------------------+
+    | Control board x1        | USB cable x1                 | Ultrasonic module x1          |
+    |                         |                              |                               |
+    | |Chapter06_00|          | |Chapter06_01|               | |Chapter23_00|                |
+    +-------------------------+------------------------------+-------------------------------+
+    | Jumper Wire x4                                                                         |
+    |                                                                                        |
+    | |Chapter06_03|                                                                         |
+    +----------------------------------------------------------------------------------------+
+    | Freenove Projects Board                                                                |
+    |                                                                                        |
+    | |Chapter06_04|                                                                         |
+    +----------------------------------------------------------------------------------------+
 
 .. |Chapter06_00| image:: ../_static/imgs/6_RGB_LED/Chapter06_00.png
 .. |Chapter06_01| image:: ../_static/imgs/6_RGB_LED/Chapter06_01.png
@@ -51,29 +56,29 @@ The Ultrasonic Ranging Module uses the principle that ultrasonic waves will refl
 Pin description:
 
 .. list-table:: 
-    :width: 100%
     :align: center
-    :class: product-table
+    :header-rows: 1
+    :class: zebra
 
-    *   -   Pin name
-        -   Pin number
-        -   Description
+    * - Pin name
+      - Pin number
+      - Description
 
-    *   -   Vcc
-        -   1
-        -   Positive electrode of power supply, the voltage is 5V
+    * - Vcc
+      - 1
+      - Positive electrode of power supply, the voltage is 5V
 
-    *   -   Trig
-        -   2
-        -   Triger pin
+    * - Trig
+      - 2
+      - Triger pin
 
-    *   -   Echo
-        -   3
-        -   Echo pin
+    * - Echo
+      - 3
+      - Echo pin
 
-    *   -   Gnd
-        -   4
-        -   Negative electrode of power supply
+    * - Gnd
+      - 4
+      - Negative electrode of power supply
 
 Instructions for use: output a high-level pulse in Trig pin lasting for least 10uS, the module begins to transmit ultrasonic waves. At the same time, the Echo pin is pulled up. When the module receives the returned ultrasonic waves from encountering an obstacle, the Echo pin will be pulled down. The duration of high level in the Echo pin is the total time of the ultrasonic wave from transmitting to receiving, s=vt/2. This is done constantly.
 
@@ -83,15 +88,14 @@ Circuit
 The connection of the control board and HC-SR04 is shown below.
 
 .. list-table:: 
-    :width: 100%
+    :width: 80%
     :align: center
-    :class: product-table
+    :class: table-line
 
-    *   -   Schematic diagram
-    *   -   |Chapter23_03|
-    *   -   Hardware connection
-    *   -   |Chapter23_04|
-
+    * - **Schematic diagram**
+    * - |Chapter23_03|
+    * - **Hardware connection**
+    * - |Chapter23_04|
 
 .. |Chapter23_03| image:: ../_static/imgs/23_Ultrasonic_Ranging/Chapter23_03.png
 .. |Chapter23_04| image:: ../_static/imgs/23_Ultrasonic_Ranging/Chapter23_04.png

@@ -10,19 +10,24 @@ Now, we will use dedicated chip DRV8837 to control the motor.
 Component List
 ======================================
 
-+-------------------------+------------------------------+------------------------------------------------------+
-| Control board x1        | USB cable x1                 | Motor  x1                                            |
-|                         |                              |                                                      |
-| |Chapter06_00|          | |Chapter06_01|               | |Chapter10_00|                                       |
-+-------------------------+----------------+-------------+------------------------------------------------------+
-| Jumper Wire x2                           |  9V Battery Connector (Batteries NOT Included) x1                  |
-|                                          |                                                                    |
-| |Chapter06_03|                           |   |Chapter10_01|                                                   |
-+------------------------------------------+--------------------------------------------------------------------+
-| Freenove Projects Board                                                                                       |
-|                                                                                                               |
-| |Chapter06_04|                                                                                                |
-+---------------------------------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+------------------------------+-------------------------------------+
+    | Control board x1        | USB cable x1                 | Motor  x1                           |
+    |                         |                              |                                     |
+    | |Chapter06_00|          | |Chapter06_01|               | |Chapter10_00|                      |
+    +-------------------------+----------------+-------------+-------------------------------------+
+    | Jumper Wire x2                           |  9V Battery Connector (Batteries NOT Included) x1 |
+    |                                          |                                                   |
+    | |Chapter06_03|                           |   |Chapter10_01|                                  |
+    +------------------------------------------+---------------------------------------------------+
+    | Freenove Projects Board                                                                      |
+    |                                                                                              |
+    | |Chapter06_04|                                                                               |
+    +----------------------------------------------------------------------------------------------+
 
 .. |Chapter06_00| image:: ../_static/imgs/6_RGB_LED/Chapter06_00.png
 .. |Chapter06_01| image:: ../_static/imgs/6_RGB_LED/Chapter06_01.png
@@ -53,9 +58,8 @@ DRV8837
 DRV8837 is a 2-channel motor driven IC chip. You can use it to drive a unidirectional DC motor with 2 ports or a bidirectional DC motor with 1 port.
 
 .. list-table:: 
-    :width: 100%
     :align: center
-    :class: product-table
+    :class: table-line
 
     *   -   |Chapter10_04|
         -   |Chapter10_05|
@@ -66,9 +70,9 @@ DRV8837 is a 2-channel motor driven IC chip. You can use it to drive a unidirect
 Port description of DRV8837 module is as follows:
 
 .. list-table:: 
-    :width: 100%
     :align: center
-    :class: product-table
+    :class: zebra
+    :header-rows: 1
 
     *   -   Pin name
         -   Pin number
@@ -117,15 +121,20 @@ Circuit
 
 Use pin A1 of the control board to detect the voltage of rotary potentiometer; pin 9 and pin 10 to control the motor's rotation direction and speed.
 
-+-------------------------+----------------------------------+
-| Schematic diagram       | Hardware connection              |
-|                         |                                  |
-| |Chapter10_08|          | |Chapter10_09|                   |
-+-------------------------+----------------------------------+
-| Hardware connection                                        |
-|                                                            |
-| |Chapter10_10|                                             |
-+------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------------------------+
+    | Schematic diagram       | Hardware connection              |
+    |                         |                                  |
+    | |Chapter10_08|          | |Chapter10_09|                   |
+    +-------------------------+----------------------------------+
+    | Hardware connection                                        |
+    |                                                            |
+    | |Chapter10_10|                                             |
+    +------------------------------------------------------------+
 
 .. |Chapter10_08| image:: ../_static/imgs/10_Motor/Chapter10_08.png
 .. |Chapter10_09| image:: ../_static/imgs/10_Motor/Chapter10_09.png

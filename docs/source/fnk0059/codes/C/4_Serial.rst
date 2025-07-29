@@ -12,15 +12,21 @@ We will use the serial port on control board to send data to computer.
 Component List
 ================================
 
-+-------------------------+----------------+
-| Control board x1        | USB cable x1   |
-|                         |                |
-| |Chapter01_00|          | |Chapter01_01| |
-+-------------------------+----------------+
-| Freenove Projects Board                  |
-|                                          |
-| |Chapter01_02|                           |
-+------------------------------------------+
+.. table:: 
+    :width: 80%
+    :widths: 1 1
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------+
+    | Control board x1        | USB cable x1   |
+    |                         |                |
+    | |Chapter01_00|          | |Chapter01_01| |
+    +-------------------------+----------------+
+    | Freenove Projects Board                  |
+    |                                          |
+    | |Chapter01_02|                           |
+    +------------------------------------------+
 
 .. |Chapter01_00| image:: ../_static/imgs/1_LED_Blink/Chapter01_00.png
 .. |Chapter01_01| image:: ../_static/imgs/1_LED_Blink/Chapter01_01.png
@@ -37,11 +43,11 @@ As mentioned earlier, computers use a binary signal. A binary signal is called 1
 As to binary number 10010110, "0" usually presents the lowest value in code.
 
 .. list-table:: 
-    :width: 80%
     :align: center
-    :class: product-table
+    :class: table-line text-center
 
-    *   -   7
+    *   -   Sequence   
+        -   7
         -   6
         -   5
         -   4
@@ -50,7 +56,8 @@ As to binary number 10010110, "0" usually presents the lowest value in code.
         -   1
         -   0
 
-    *   -   1
+    *   -   Number   
+        -   1
         -   0
         -   0
         -   1
@@ -192,12 +199,11 @@ Now, write code to receive the characters from Serial Monitor window, and send i
 
 In the setup() function, we initialize the serial port. Then, the loop() function will continuously detect whether there are data  to read. If so, it will read the character and send it back.
 
-Serial Class
-==================================
+.. py:function:: Serial Class
 
-Serial.available(): return bytes of data that need to be read by serial port;
+    Serial.available(): return bytes of data that need to be read by serial port;
 
-Serial.read(): return 1 byte of data that need to be read  by serial port.
+    Serial.read(): return 1 byte of data that need to be read  by serial port.
 
 Verify and upload the code, open the Serial Monitor, write character in the sending area, click Send button, then you'll see information returned from control board.
 
@@ -235,15 +241,20 @@ We will use the serial port on control board to control one LED.
 Component List
 ================================
 
-+-------------------------+----------------+
-| Control board x1        | USB cable x1   |
-|                         |                |
-| |Chapter01_00|          | |Chapter01_01| |
-+-------------------------+----------------+
-| Freenove Projects Board                  |
-|                                          |
-| |Chapter01_02|                           |
-+------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------+
+    | Control board x1        | USB cable x1   |
+    |                         |                |
+    | |Chapter01_00|          | |Chapter01_01| |
+    +-------------------------+----------------+
+    | Freenove Projects Board                  |
+    |                                          |
+    | |Chapter01_02|                           |
+    +------------------------------------------+
 
 Circuit Knowledge
 ===================================
@@ -274,15 +285,15 @@ Here we will use pin 6 on the control board to drive 1 LED.
     :align: center
     :class: product-table
 
-    *   -   Schematic diagram
-    *   -   |Chapter04_11|
-    *   -   Hardware connection
+    * - Schematic diagram
+    * - |Chapter04_11|
+        Hardware connection
 
-            Insert the Control Board upside down to the Freenove Projects Board, and then turn the corresponding 
-            
-            switch to the right (On)
+    * - Insert the Control Board upside down to the Freenove Projects Board, and then turn the corresponding 
+        
+        switch to the right (On)
 
-    *   -   |Chapter04_12|
+    * - |Chapter04_12|
 
 .. |Chapter04_11| image:: ../_static/imgs/4_Serial/Chapter04_11.png
 .. |Chapter04_12| image:: ../_static/imgs/4_Serial/Chapter04_12.png

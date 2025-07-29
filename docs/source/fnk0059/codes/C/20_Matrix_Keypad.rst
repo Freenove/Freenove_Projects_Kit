@@ -12,15 +12,20 @@ First, try to understand how the keypad works and get the input characters.
 Component List
 ===============================================
 
-+-------------------------+------------------------------+-------------------------------+
-| Control board x1        | USB cable x1                 | Keypad x1                     |
-|                         |                              |                               |
-| |Chapter06_00|          | |Chapter06_01|               | |Chapter20_00|                |
-+-------------------------+------------------------------+-------------------------------+
-| Freenove Projects Board                                                                |
-|                                                                                        |
-| |Chapter06_04|                                                                         |
-+----------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+------------------------------+-------------------------------+
+    | Control board x1        | USB cable x1                 | Keypad x1                     |
+    |                         |                              |                               |
+    | |Chapter06_00|          | |Chapter06_01|               | |Chapter20_00|                |
+    +-------------------------+------------------------------+-------------------------------+
+    | Freenove Projects Board                                                                |
+    |                                                                                        |
+    | |Chapter06_04|                                                                         |
+    +----------------------------------------------------------------------------------------+
 
 .. |Chapter06_00| image:: ../_static/imgs/6_RGB_LED/Chapter06_00.png
 .. |Chapter06_01| image:: ../_static/imgs/6_RGB_LED/Chapter06_01.png
@@ -51,13 +56,13 @@ Circuit
 Use pin 9-2 on control board to connect 4x4 keypad.
 
 .. list-table:: 
-    :width: 100%
+    :width: 80%
     :align: center
-    :class: product-table
+    :class: table-line
 
-    *   -   Schematic diagram
+    *   -   **Schematic diagram**
     *   -   |Chapter20_03|
-    *   -   Hardware connection
+    *   -   **Hardware connection**
     *   -   |Chapter20_04|
     *   -   |Chapter20_05|
 
@@ -73,7 +78,7 @@ Get_Input_Characters
 
 Before writing code, we need to import the library needed.
 
-Click “Add .ZIP Library...” and then find Keypad.zip in libraries folder (this folder is in the folder unzipped form the ZIP file we provided). This library can facilitate our operation of keypad.
+Click “Add .ZIP Library...” and then find **Keypad.zip** in libraries folder (this folder is in the folder unzipped form the ZIP file we provided). This library can facilitate our operation of keypad.
 
 Now write the code to obtain the keypad characters, and send them to the serial port.
 

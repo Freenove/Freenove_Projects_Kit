@@ -39,7 +39,7 @@ Select the port.
     
     - For black board, see “InstallDriver.pdf” in “Drivers” folder (in the folder contains this Tutorial.pdf).
 
-    :red:`Having problems? Contact us for help!` Send mail to: support@freenove.com
+    :combo:`bg-red font-bolder:Having problems?` Contact us for help! Send mail to: support@freenove.com
 
 Click "Verify" button.
 
@@ -68,7 +68,7 @@ Wait a moment, and then the uploading is completed.
 
 .. hint::
     
-    :red:`Having problems? Contact us for help!` Send mail to: support@freenove.com
+    :combo:`bg-red font-bolder:Having problems?` Contact us for help! Send mail to: support@freenove.com
 
 After that, we will see the LED marked with "L" on the control board start blinking. It indicates that the code is running now!
 

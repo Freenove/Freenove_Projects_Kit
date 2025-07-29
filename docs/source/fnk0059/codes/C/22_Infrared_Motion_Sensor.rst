@@ -11,19 +11,24 @@ Now, we'll use the Infrared Motion Sensor to detect human motion.
 Component List
 ============================
 
-+-------------------------+------------------------------+-------------------------------+
-| Control board x1        | USB cable x1                 | Infrared Motion Sensor x1     |
-|                         |                              |                               |
-| |Chapter06_00|          | |Chapter06_01|               | |Chapter22_00|                |
-+-------------------------+------------------------------+-------------------------------+
-| Jumper Wire x4                                                                         |
-|                                                                                        |
-| |Chapter06_03|                                                                         |
-+----------------------------------------------------------------------------------------+
-| Freenove Projects Board                                                                |
-|                                                                                        |
-| |Chapter06_04|                                                                         |
-+----------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+------------------------------+-------------------------------+
+    | Control board x1        | USB cable x1                 | Infrared Motion Sensor x1     |
+    |                         |                              |                               |
+    | |Chapter06_00|          | |Chapter06_01|               | |Chapter22_00|                |
+    +-------------------------+------------------------------+-------------------------------+
+    | Jumper Wire x4                                                                         |
+    |                                                                                        |
+    | |Chapter06_03|                                                                         |
+    +----------------------------------------------------------------------------------------+
+    | Freenove Projects Board                                                                |
+    |                                                                                        |
+    | |Chapter06_04|                                                                         |
+    +----------------------------------------------------------------------------------------+
 
 .. |Chapter06_00| image:: ../_static/imgs/6_RGB_LED/Chapter06_00.png
 .. |Chapter06_01| image:: ../_static/imgs/6_RGB_LED/Chapter06_01.png
@@ -50,9 +55,9 @@ Description:
 
 3.	According to the position of Fresnel lenses dome, you can choose non-repeatable trigger modes or repeatable modes. 
 
-L: non-repeatable trigger mode. The module output high level after sensing a body, then when the delay time is over, the module will output low level. During high level time, the sensor no longer actively senses bodies.  
+    L: non-repeatable trigger mode. The module output high level after sensing a body, then when the delay time is over, the module will output low level. During high level time, the sensor no longer actively senses bodies.  
 
-H: repeatable trigger mode. The distinction from the L mode is that it can sense a body until that body leaves during the period of high level output. After this, it starts to time and output low level after delaying T time.
+    H: repeatable trigger mode. The distinction from the L mode is that it can sense a body until that body leaves during the period of high level output. After this, it starts to time and output low level after delaying T time.
 
 4.	Induction block time: the induction will stay in block condition and does not induce external signal at lesser time intervals (less than delay time) after outputting high level or low level.
 
@@ -67,17 +72,22 @@ Circuit
 
 Use pin 2 on the control board to connect out-pin of HC-SR501 infrared motion sensor.
 
-+-------------------------+----------------------------------+
-| Schematic diagram       | Hardware connection              |
-|                         |                                  |
-| |Chapter22_02|          | |Chapter22_03|                   |
-+-------------------------+----------------------------------+
-| Hardware connection                                        |
-|                                                            |
-| |Chapter22_04|                                             |
-+------------------------------------------------------------+
-| |Chapter22_05|                                             |
-+------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------------------------+
+    | Schematic diagram       | Hardware connection              |
+    |                         |                                  |
+    | |Chapter22_02|          | |Chapter22_03|                   |
+    +-------------------------+----------------------------------+
+    | Hardware connection                                        |
+    |                                                            |
+    | |Chapter22_04|                                             |
+    +------------------------------------------------------------+
+    | |Chapter22_05|                                             |
+    +------------------------------------------------------------+
 
 .. |Chapter22_02| image:: ../_static/imgs/22_Infrared_Motion_Sensor/Chapter22_02.png
 .. |Chapter22_03| image:: ../_static/imgs/22_Infrared_Motion_Sensor/Chapter22_03.png

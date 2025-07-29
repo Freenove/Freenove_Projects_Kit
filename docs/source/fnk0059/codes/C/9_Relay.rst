@@ -10,15 +10,21 @@ Project 9.1 Control Relay
 Component List
 =======================================
 
-+-------------------------+----------------+
-| Control board x1        | USB cable x1   |
-|                         |                |
-| |Chapter01_00|          | |Chapter01_01| |
-+-------------------------+----------------+
-| Freenove Projects Board                  |
-|                                          |
-| |Chapter01_02|                           |
-+------------------------------------------+
+.. table:: 
+    :width: 80%
+    :widths: 1 1
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------+
+    | Control board x1        | USB cable x1   |
+    |                         |                |
+    | |Chapter01_00|          | |Chapter01_01| |
+    +-------------------------+----------------+
+    | Freenove Projects Board                  |
+    |                                          |
+    | |Chapter01_02|                           |
+    +------------------------------------------+
 
 .. |Chapter01_00| image:: ../_static/imgs/1_LED_Blink/Chapter01_00.png
 .. |Chapter01_01| image:: ../_static/imgs/1_LED_Blink/Chapter01_01.png
@@ -78,19 +84,24 @@ Circuit
 
 Use pin 2 of control board to detect the state of push button switch, and pin 7 to control the relay. As the running of motor needs larger power, we will use two AA batteries to supply power for the motor alone.
 
-+-------------------------+----------------------------------+
-| Schematic diagram       | Hardware connection              |
-|                         |                                  |
-| |Chapter08_05|          | |Chapter08_06|                   |
-+-------------------------+----------------------------------+
-| Hardware connection                                        |
-|                                                            |
-| |Chapter08_07|                                             |
-+------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------------------------+
+    | Schematic diagram       | Hardware connection              |
+    |                         |                                  |
+    | |Chapter09_05|          | |Chapter09_06|                   |
+    +-------------------------+----------------------------------+
+    | Hardware connection                                        |
+    |                                                            |
+    | |Chapter09_07|                                             |
+    +------------------------------------------------------------+
 
-.. |Chapter08_05| image:: ../_static/imgs/8_Buzzer/Chapter08_05.png
-.. |Chapter08_06| image:: ../_static/imgs/8_Buzzer/Chapter08_06.png
-.. |Chapter08_07| image:: ../_static/imgs/8_Buzzer/Chapter08_07.png
+.. |Chapter09_05| image:: ../_static/imgs/9_Relay/Chapter09_05.png
+.. |Chapter09_06| image:: ../_static/imgs/9_Relay/Chapter09_06.png
+.. |Chapter09_07| image:: ../_static/imgs/9_Relay/Chapter09_07.png
 
 Sketch
 ==================================
@@ -129,7 +140,7 @@ Define a variable to record the time of the last button pin change.
     :linenos: 
     :language: c
     :dedent:
-    :lines: 13-13
+    :lines: 14-14
 
 In the loop() function, the detected pin state of button will be compared with the last detected state. If it changes, record this time point.
 
@@ -142,14 +153,16 @@ In the loop() function, the detected pin state of button will be compared with t
 If the level stays unchanged over a period of time, it is considered that the bounce area has already been skipped.
 
 .. code-block:: c
+    :linenos:
 
-  if (millis() - lastChangeTime > 10) {
-    ......
-  }
+    if (millis() - lastChangeTime > 10) {
+        ......
+    }
 
 After the pin state stays stable, the changed state of button is confirmed, then it will be recorded for the next comparison.
 
 .. code-block:: c
+    :linenos:
 
     if (buttonState != nowButtonState) {  // Confirm button state has changed
         buttonState = nowButtonState;

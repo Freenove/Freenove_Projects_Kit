@@ -12,15 +12,20 @@ First, let's experience the 2D version game.
 Component list
 ======================================
 
-+-------------------------+----------------+
-| Control board x1        | USB cable x1   |
-|                         |                |
-| |Chapter01_00|          | |Chapter01_01| |
-+-------------------------+----------------+
-| Freenove Projects Board                  |
-|                                          |
-| |Chapter01_02|                           |
-+------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------+
+    | Control board x1        | USB cable x1   |
+    |                         |                |
+    | |Chapter01_00|          | |Chapter01_01| |
+    +-------------------------+----------------+
+    | Freenove Projects Board                  |
+    |                                          |
+    | |Chapter01_02|                           |
+    +------------------------------------------+
 
 .. |Chapter01_00| image:: ../_static/imgs/1_LED_Blink/Chapter01_00.png
 .. |Chapter01_01| image:: ../_static/imgs/1_LED_Blink/Chapter01_01.png
@@ -31,19 +36,24 @@ Circuit
 
 Use A1 and A2 ports on connect board to detect the voltage value of two rotary potentiometers inside joystick.
 
-+-------------------------+-----------------------------------------------------------+
-| Schematic diagram       | Hardware connection                                       |
-|                         |                                                           |
-| |Chapter05_00|          | |Chapter05_01|                                            |
-+-------------------------+-----------------------------------------------------------+
-| Hardware connection                                                                 |
-|                                                                                     |
-| Insert the Control Board to Freenove Projects Board, and then turn the corresponding|
-|                                                                                     |
-| switch to the right(ON).                                                            |
-|                                                                                     |
-| |Chapter05_02|                                                                      |
-+-------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+-----------------------------------------------------------+
+    | Schematic diagram       | Hardware connection                                       |
+    |                         |                                                           |
+    | |Chapter05_00|          | |Chapter05_01|                                            |
+    +-------------------------+-----------------------------------------------------------+
+    | Hardware connection                                                                 |
+    |                                                                                     |
+    | Insert the Control Board to Freenove Projects Board, and then turn the corresponding|
+    |                                                                                     |
+    | switch to the right(ON).                                                            |
+    |                                                                                     |
+    | |Chapter05_02|                                                                      |
+    +-------------------------------------------------------------------------------------+
 
 .. |Chapter05_00| image:: ../_static/imgs/5_Pong_Game/Chapter05_00.png
 .. |Chapter05_01| image:: ../_static/imgs/5_Pong_Game/Chapter05_01.png

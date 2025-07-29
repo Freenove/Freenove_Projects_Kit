@@ -10,15 +10,20 @@ Now, try to use digit display that can display 4-digit numbers.
 Component List
 ===============================================
 
-+-------------------------+------------------------------+-------------------------------+
-| Control board x1        | USB cable x1                 | Digital Tube x1               |
-|                         |                              |                               |
-| |Chapter06_00|          | |Chapter06_01|               | |Chapter16_00|                |
-+-------------------------+------------------------------+-------------------------------+
-| Freenove Projects Board                                                                |
-|                                                                                        |
-| |Chapter06_04|                                                                         |
-+----------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+------------------------------+-------------------------------+
+    | Control board x1        | USB cable x1                 | Digital Tube x1               |
+    |                         |                              |                               |
+    | |Chapter06_00|          | |Chapter06_01|               | |Chapter16_00|                |
+    +-------------------------+------------------------------+-------------------------------+
+    | Freenove Projects Board                                                                |
+    |                                                                                        |
+    | |Chapter06_04|                                                                         |
+    +----------------------------------------------------------------------------------------+
 
 .. |Chapter06_00| image:: ../_static/imgs/6_RGB_LED/Chapter06_00.png
 .. |Chapter06_01| image:: ../_static/imgs/6_RGB_LED/Chapter06_01.png
@@ -50,15 +55,20 @@ Circuit
 
 Control 74HC595 with pins 11, 12, 13 of the control board, and connect the 4-digit 7-segment display to the board.
 
-+-------------------------+----------------------------------+
-| Schematic diagram       | Hardware connection              |
-|                         |                                  |
-| |Chapter16_03|          | |Chapter16_04|                   |
-+-------------------------+----------------------------------+
-| Hardware connection                                        |
-|                                                            |
-| |Chapter16_05|                                             |
-+------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------------------------+
+    | Schematic diagram       | Hardware connection              |
+    |                         |                                  |
+    | |Chapter16_03|          | |Chapter16_04|                   |
+    +-------------------------+----------------------------------+
+    | Hardware connection                                        |
+    |                                                            |
+    | |Chapter16_05|                                             |
+    +------------------------------------------------------------+
 
 .. |Chapter16_03| image:: ../_static/imgs/16_4-digit_7-segment_Display/Chapter16_03.png
 .. |Chapter16_04| image:: ../_static/imgs/16_4-digit_7-segment_Display/Chapter16_04.png
@@ -118,34 +128,44 @@ Now, try to use digit display that can display 4-digit numbers.
 Component List
 ===============================================
 
-+-------------------------+------------------------------+-------------------------------+
-| Control board x1        | USB cable x1                 | Digital Tube x1               |
-|                         |                              |                               |
-| |Chapter06_00|          | |Chapter06_01|               | |Chapter16_00|                |
-+-------------------------+------------------------------+-------------------------------+
-| Freenove Projects Board                                                                |
-|                                                                                        |
-| |Chapter06_04|                                                                         |
-+----------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+------------------------------+-------------------------------+
+    | Control board x1        | USB cable x1                 | Digital Tube x1               |
+    |                         |                              |                               |
+    | |Chapter06_00|          | |Chapter06_01|               | |Chapter16_00|                |
+    +-------------------------+------------------------------+-------------------------------+
+    | Freenove Projects Board                                                                |
+    |                                                                                        |
+    | |Chapter06_04|                                                                         |
+    +----------------------------------------------------------------------------------------+
 
 Circuit
 ================================================
 
 Control 74HC595 with pins 11, 12, 13 of the control board, and connect the 4-digit 7-segment display to the board.
 
-+-------------------------+----------------------------------+
-| Schematic diagram       | Hardware connection              |
-|                         |                                  |
-| |Chapter15_07|          | |Chapter15_08|                   |
-+-------------------------+----------------------------------+
-| Hardware connection                                        |
-|                                                            |
-| |Chapter15_09|                                             |
-+------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------------------------+
+    | Schematic diagram       | Hardware connection              |
+    |                         |                                  |
+    | |Chapter16_07|          | |Chapter16_08|                   |
+    +-------------------------+----------------------------------+
+    | Hardware connection                                        |
+    |                                                            |
+    | |Chapter16_09|                                             |
+    +------------------------------------------------------------+
 
-.. |Chapter15_07| image:: ../_static/imgs/15_LED_Bar/Chapter15_07.png
-.. |Chapter15_08| image:: ../_static/imgs/15_LED_Bar/Chapter15_08.png
-.. |Chapter15_09| image:: ../_static/imgs/15_LED_Bar/Chapter15_09.png
+.. |Chapter16_07| image:: ../_static/imgs/16_4-digit_7-segment_Display/Chapter16_07.png
+.. |Chapter16_08| image:: ../_static/imgs/16_4-digit_7-segment_Display/Chapter16_08.png
+.. |Chapter16_09| image:: ../_static/imgs/16_4-digit_7-segment_Display/Chapter16_09.png
 
 Sketch
 ===========================================

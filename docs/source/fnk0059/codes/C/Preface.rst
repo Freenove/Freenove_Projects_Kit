@@ -22,7 +22,8 @@ There are multiple versions of Freenove control board. Your purchase may be one 
 .. list-table:: 
     :width: 80%
     :align: center
-    :class: product-table
+    :class: table-line
+    :header-rows: 1
 
     *   -   Freenove Control Board (Black)
         -   Freenove Control Board (Blue)
@@ -46,12 +47,19 @@ Diagram of the Freenove control board is shown below:
     :align: center 
 
 - Digital I/O ports is used to connect to other components or modules, to receive an input signal, or to send a control signal. Usually, we name it by adding a "D" in front of the number, such as D13 (pin 13).
+
 - USB interface is used to provide power, upload code or communicate with PC. 
+
 - LED L is connected to digital I/O port 13 (pin 13).
+
 - LED TX, RX is used to indicate the state of the serial communication. 
+
 - DC interface is connected DC power to provide power for the board.
+
 - Power ports can provide power for electronic components and modules.
+
 - Analog I/O ports can be used to measure analog signals. 
+
 - LED ON is used to indicate the power state.
 
 Projects Board
@@ -63,6 +71,7 @@ Features
     :align: center 
 
 Assemble Acrylic Part
+******************************************************************************
 
 1. Peel off the sticker on the acrylic surface. If you don't think it is necessary, you can leave it alone.
 
@@ -86,7 +95,7 @@ Assemble Acrylic Part
 
 .. warning::
     
-    If it cannot be installed, please rotate the acrylic 180 degrees, or check whether the Brass Standoff and Round Head Nut are installed reversely.
+    **If it cannot be installed, please rotate the acrylic 180 degrees, or check whether the Brass Standoff and Round Head Nut are installed reversely.**
 
 Finish
 

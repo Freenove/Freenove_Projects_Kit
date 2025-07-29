@@ -12,15 +12,20 @@ First, let's experience the 2D version game.
 Component list
 ======================================
 
-+-------------------------+----------------+
-| Control board x1        | USB cable x1   |
-|                         |                |
-| |Chapter01_00|          | |Chapter01_01| |
-+-------------------------+----------------+
-| Freenove Projects Board                  |
-|                                          |
-| |Chapter01_02|                           |
-+------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------+
+    | Control board x1        | USB cable x1   |
+    |                         |                |
+    | |Chapter01_00|          | |Chapter01_01| |
+    +-------------------------+----------------+
+    | Freenove Projects Board                  |
+    |                                          |
+    | |Chapter01_02|                           |
+    +------------------------------------------+
 
 .. |Chapter01_00| image:: ../_static/imgs/1_LED_Blink/Chapter01_00.png
 .. |Chapter01_01| image:: ../_static/imgs/1_LED_Blink/Chapter01_01.png
@@ -31,15 +36,20 @@ Circuit
 
 Use A1 and A2 ports on connect board to detect the voltage value of two rotary potentiometers inside joystick.
 
-+-------------------------+-----------------------------------------------------------+
-| Schematic diagram       | Hardware connection                                       |
-|                         |                                                           |
-| |Chapter04_00|          | |Chapter04_01|                                            |
-+-------------------------+-----------------------------------------------------------+
-| Hardware connection                                                                 |
-|                                                                                     |
-| |Chapter04_02|                                                                      |
-+-------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+-----------------------------------------------------------+
+    | Schematic diagram       | Hardware connection                                       |
+    |                         |                                                           |
+    | |Chapter04_00|          | |Chapter04_01|                                            |
+    +-------------------------+-----------------------------------------------------------+
+    | Hardware connection                                                                 |
+    |                                                                                     |
+    | |Chapter04_02|                                                                      |
+    +-------------------------------------------------------------------------------------+
 
 .. |Chapter04_00| image:: ../_static/imgs/4_Snake_Game/Chapter04_00.png
 .. |Chapter04_01| image:: ../_static/imgs/4_Snake_Game/Chapter04_01.png

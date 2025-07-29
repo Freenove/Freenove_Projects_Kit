@@ -12,15 +12,20 @@ Now, let's use Processing and control board to achieve an oscilloscope.
 Component list
 ======================================
 
-+-------------------------+----------------+
-| Control board x1        | USB cable x1   |
-|                         |                |
-| |Chapter01_00|          | |Chapter01_01| |
-+-------------------------+----------------+
-| Freenove Projects Board                  |
-|                                          |
-| |Chapter01_02|                           |
-+------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------+
+    | Control board x1        | USB cable x1   |
+    |                         |                |
+    | |Chapter01_00|          | |Chapter01_01| |
+    +-------------------------+----------------+
+    | Freenove Projects Board                  |
+    |                                          |
+    | |Chapter01_02|                           |
+    +------------------------------------------+
 
 .. |Chapter01_00| image:: ../_static/imgs/1_LED_Blink/Chapter01_00.png
 .. |Chapter01_01| image:: ../_static/imgs/1_LED_Blink/Chapter01_01.png
@@ -31,19 +36,24 @@ Circuit
 
 Use pin A1 on the control board to detect the voltage of rotary potentiometer.
 
-+-------------------------+-----------------------------------------------------------+
-| Schematic diagram       | Hardware connection                                       |
-|                         |                                                           |
-| |Chapter02_00|          | |Chapter02_01|                                            |
-+-------------------------+-----------------------------------------------------------+
-| Hardware connection                                                                 |
-|                                                                                     |
-| Insert the Control Board to Freenove Projects Board, and then turn the corresponding|
-|                                                                                     |
-| switch to the right(ON).                                                            |
-|                                                                                     |
-| |Chapter02_02|                                                                      |
-+-------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+-----------------------------------------------------------+
+    | Schematic diagram       | Hardware connection                                       |
+    |                         |                                                           |
+    | |Chapter02_00|          | |Chapter02_01|                                            |
+    +-------------------------+-----------------------------------------------------------+
+    | Hardware connection                                                                 |
+    |                                                                                     |
+    | Insert the Control Board to Freenove Projects Board, and then turn the corresponding|
+    |                                                                                     |
+    | switch to the right(ON).                                                            |
+    |                                                                                     |
+    | |Chapter02_02|                                                                      |
+    +-------------------------------------------------------------------------------------+
 
 .. |Chapter02_00| image:: ../_static/imgs/2_Oscilloscope/Chapter02_00.png
 .. |Chapter02_01| image:: ../_static/imgs/2_Oscilloscope/Chapter02_01.png

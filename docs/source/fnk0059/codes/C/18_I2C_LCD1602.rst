@@ -10,19 +10,24 @@ Firstly, use I2C LCD1602 to display some strings.
 Component List
 ===========================
 
-+-------------------------+------------------------------+-------------------------------+
-| Control board x1        | USB cable x1                 | I2C-LCD1602 x1                |
-|                         |                              |                               |
-| |Chapter06_00|          | |Chapter06_01|               | |Chapter18_01|                |
-+-------------------------+------------------------------+-------------------------------+
-| Jumper Wire x4                                                                         |
-|                                                                                        |
-| |Chapter06_03|                                                                         |
-+----------------------------------------------------------------------------------------+
-| Freenove Projects Board                                                                |
-|                                                                                        |
-| |Chapter06_04|                                                                         |
-+----------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+------------------------------+----------------+
+    | Control board x1        | USB cable x1                 | I2C-LCD1602 x1 |
+    |                         |                              |                |
+    | |Chapter06_00|          | |Chapter06_01|               | |Chapter18_01| |
+    +-------------------------+------------------------------+----------------+
+    | Jumper Wire x4                                                          |
+    |                                                                         |
+    | |Chapter06_03|                                                          |
+    +-------------------------------------------------------------------------+
+    | Freenove Projects Board                                                 |
+    |                                                                         |
+    | |Chapter06_04|                                                          |
+    +-------------------------------------------------------------------------+
 
 .. |Chapter06_00| image:: ../_static/imgs/6_RGB_LED/Chapter06_00.png
 .. |Chapter06_01| image:: ../_static/imgs/6_RGB_LED/Chapter06_01.png
@@ -53,9 +58,9 @@ Circuit
 The connection of control board and I2C LCD1602 is shown below. 
 
 .. list-table:: 
-    :width: 100%
+    :width: 80%
     :align: center
-    :class: product-table
+    :class: table-line
 
     *   -   Schematic diagram
     *   -   |Chapter18_02|
@@ -161,19 +166,24 @@ In the previous chapter, we have used I2C LCD1602 to display some strings, and n
 Component List
 ===========================
 
-+-------------------------+------------------------------+-------------------------------+
-| Control board x1        | USB cable x1                 | I2C-LCD1602 x1                |
-|                         |                              |                               |
-| |Chapter06_00|          | |Chapter06_01|               | |Chapter18_01|                |
-+-------------------------+------------------------------+-------------------------------+
-| Jumper Wire x4                                                                         |
-|                                                                                        |
-| |Chapter06_03|                                                                         |
-+----------------------------------------------------------------------------------------+
-| Freenove Projects Board                                                                |
-|                                                                                        |
-| |Chapter06_04|                                                                         |
-+----------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+------------------------------+-------------------------------+
+    | Control board x1        | USB cable x1                 | I2C-LCD1602 x1                |
+    |                         |                              |                               |
+    | |Chapter06_00|          | |Chapter06_01|               | |Chapter18_01|                |
+    +-------------------------+------------------------------+-------------------------------+
+    | Jumper Wire x4                                                                         |
+    |                                                                                        |
+    | |Chapter06_03|                                                                         |
+    +----------------------------------------------------------------------------------------+
+    | Freenove Projects Board                                                                |
+    |                                                                                        |
+    | |Chapter06_04|                                                                         |
+    +----------------------------------------------------------------------------------------+
 
 Code Knowledge
 ==============================
@@ -191,17 +201,22 @@ Circuit
 
 The connection is shown below. Pin A0 is used to detect the voltage of thermistor. 
 
-+-------------------------+----------------------------------+
-| Schematic diagram       | Hardware connection              |
-|                         |                                  |
-| |Chapter18_07|          | |Chapter18_08|                   |
-+-------------------------+----------------------------------+
-| Hardware connection                                        |
-|                                                            |
-| |Chapter18_09|                                             |
-+------------------------------------------------------------+
-| |Chapter18_10|                                             |
-+------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------------------------+
+    | Schematic diagram       | Hardware connection              |
+    |                         |                                  |
+    | |Chapter18_07|          | |Chapter18_08|                   |
+    +-------------------------+----------------------------------+
+    | Hardware connection                                        |
+    |                                                            |
+    | |Chapter18_09|                                             |
+    +------------------------------------------------------------+
+    | |Chapter18_10|                                             |
+    +------------------------------------------------------------+
 
 .. |Chapter18_07| image:: ../_static/imgs/18_I2C_LCD1602/Chapter18_07.png
 .. |Chapter18_08| image:: ../_static/imgs/18_I2C_LCD1602/Chapter18_08.png
@@ -216,9 +231,9 @@ LCD1602_Clock
 
 Before writing code, we need to import the library needed.
 
-Click “Add .ZIP Library...” and then find FlexiTimer2.zip in libraries folder (this folder is in the folder unzipped form the ZIP file we provided). This library can help manipulate the timer.
+Click “Add .ZIP Library...” and then find **LiquidCrystal_I2C.zip** in libraries folder (this folder is in the folder unzipped form the ZIP file we provided). This library can facilitate our operation of I2C LCD1602.
 
-Now write code to make LCD1602 display the time and temperature, and the time can be modified through the serial port.
+Now let's start to write code to use LCD1602 to display static characters and dynamic variables.
 
 .. literalinclude:: ../../../freenove_Kit/Sketches/Sketch_18.2_LCD1602_Clock/Sketch_18.2_LCD1602_Clock.ino
     :linenos: 
@@ -256,6 +271,7 @@ After each interruption, the number of seconds is increased by 1.
 In the loop () function, the information on the LCD display will be refreshed at set intervals.
 
 .. code-block:: c
+    :linenos:
 
     void loop() {
         ......

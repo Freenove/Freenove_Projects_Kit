@@ -14,15 +14,20 @@ Component List
     
     The control board you received may be black or blue. They are the same in use. Only the black control board is used to display the hardware connection in this document.
 
-+-------------------------+----------------+
-| Control board x1        | USB cable x1   |
-|                         |                |
-| |Chapter01_00|          | |Chapter01_01| |
-+-------------------------+----------------+
-| Freenove Projects Board                  |
-|                                          |
-| |Chapter01_02|                           |
-+------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------+
+    | Control board x1        | USB cable x1   |
+    |                         |                |
+    | |Chapter01_00|          | |Chapter01_01| |
+    +-------------------------+----------------+
+    | Freenove Projects Board                  |
+    |                                          |
+    | |Chapter01_02|                           |
+    +------------------------------------------+
 
 .. |Chapter01_00| image:: ../_static/imgs/1_LED_Blink/Chapter01_00.png
 .. |Chapter01_01| image:: ../_static/imgs/1_LED_Blink/Chapter01_01.png
@@ -41,7 +46,7 @@ An Analog Signal is a continuous signal in both time and value. On the contrary,
 However, Digital Signals can instantaneously change in value. This change is expressed in numbers as 1 and 0 (the basis of binary code). Their differences can more easily be seen when compared when graphed as below.
 
 .. image:: ../_static/imgs/1_LED_Blink/Chapter01_03.png
-    :align: center 
+    :align: center
 
 In practical applications, we often use binary as the digital signal, that is a series of 0's and 1's. Since a binary signal only has two values (0 or 1) it has great stability and reliability. Lastly, both analog and digital signals can be converted into the other.
 
@@ -55,7 +60,7 @@ Low level is generally equal to ground voltage(0V), while high level is to the o
 The low level of the control board is 0V and high level is 5V, as shown below. When IO port on control board outputs high level, components of small power can be directly lit, like LED.
 
 .. image:: ../_static/imgs/1_LED_Blink/Chapter01_04.png
-    :align: center 
+    :align: center
 
 LED
 ------------------------------------
@@ -93,7 +98,7 @@ A resistor is a passive electrical component that limits or regulates the flow o
 On the left, we see a physical representation of a resistor, and on the right is the symbol used to represent the presence of a resistor in a circuit diagram or schematic.
 
 .. image:: ../_static/imgs/1_LED_Blink/Chapter01_07.png
-    :align: center 
+    :align: center
 
 The bands of color on a resistor is a shorthand code used to identify its resistance value. For more details of resistor color codes, please refer to the card in the kit package.
 
@@ -125,26 +130,30 @@ There are two ways to use comments of sketches.
 Contents behind ”//” comment out the code in a single line.
 
 .. code-block:: c
+    :linenos:
     
     // this is a comment area in this line.
 
 The content in front of "//" will not be affected.
 
 .. code-block:: c
+    :linenos:
     
     delay(1000);              // wait for a second
 
-1. Symbol "/*"and "*/"
+2. Symbol "/\*"and "\*/"
 
 Code can also be commented out by the contents starting with a “/*” and finishing with a “*/” and you can place it anywhere in your code, on the same line or several lines.
 
 .. code-block:: c
+    :linenos:
     
     /* this is comment area. */
 
 Or
 
 .. code-block:: c
+    :linenos:
     
     /* 
         this is a comment line. 
@@ -162,7 +171,7 @@ float: A number that has a fractional part, such as 0.1, -1.2;
 
 char: It means character, such as 'a', '@', '0';
 
-For more about date types, please visit the website: https://www.Arduino.cc-Resources-Reference-Data Types.
+For more about date types, please visit the website: `https://www.Arduino.cc <https://www.Arduino.cc>`_ -Resources-Reference-Data Types.
 
 Constant
 ---------------------------
@@ -170,23 +179,30 @@ Constant
 A constant is a kind of data that cannot be changed, such as int type 0, 1, float type 0.1, -0.1, char type 'a', 'B'.
 
 Variable
+---------------------------
+
 A variable is a kind of data that can be changed. It consists of a name, a value, and a type. Variables need to be defined before using, such as:
 
 .. code-block:: c
+    :linenos:
     
     int i;
 
 "int" indicates the type, ";" indicates the end of the statement. The statement is usually written in one single line; and these statements form the code.
+
 After declaration of the variable, you can use it. The following is an assignment to a variable:
 
 .. code-block:: c
+    :linenos:
     
     i = 0;                    // after the execution, the value of i is 0
 
 "=" is used to pass the value of a variable or constant on the right side to the variable on the left.
+
 A certain number of variables can be declared in one statement, and a variable can be assigned multiple times. Also, the value of a variable can be passed to other variables. For example:
 
 .. code-block:: c
+    :linenos:
     
     int i, j;
     i = 0;                    // after the execution, the value of i is 0
@@ -199,6 +215,7 @@ Function
 A function is a collection of statements with a sequence of order, which performs a defined task. Let's define a function void blink() as follows:
 
 .. code-block:: c
+    :linenos:
     
     void blink() {
         digitalWrite(13, HIGH);
@@ -216,6 +233,7 @@ A function is a collection of statements with a sequence of order, which perform
 After the function is defined, it is necessary to be called before it is executed. Let's call the function void blink(), as shown below.
 
 .. code-block:: c
+    :linenos:
     
     blink();
 
@@ -227,6 +245,7 @@ When the code is executed to a statement calling the function, the function will
 Some functions have one or more parameters. When you call such functions, you need to write parameters inside "()":
 
 .. code-block:: c
+    :linenos:
     
     digitalWrite(13, HIGH);   // turn the LED on (HIGH is the voltage level)
     delay(1000);              // wait for a second
@@ -239,19 +258,19 @@ Now, we will use IO port of control board to provide power for the LED. Pin 13 o
 .. list-table:: 
     :width: 80%
     :align: center
-    :class: product-table
+    :class: table-line
 
-    *   -   Schematic diagram
-    *   -   |Chapter01_10|
-    *   -   Hardware connection
+    * - **Schematic diagram**
+    * - |Chapter01_10|
+    * - **Hardware connection**
 
-            Insert the Control Board upside down to the Freenove Projects Board, and then turn the corresponding 
-            
-            switch to the right (On)
+    * - Insert the Control Board upside down to the Freenove Projects Board, and then turn the corresponding 
+        
+        switch to the right (On)
 
-    *   -   |Chapter01_11|
+        |Chapter01_11|
 
-            :red:`For other functions that are not being used, it is recommended to turn their DIP switches to the left.`
+        :combo:`red font-bolder:For other functions that are not being used, it is recommended to turn their DIP switches to the left.`
 
 .. |Chapter01_10| image:: ../_static/imgs/1_LED_Blink/Chapter01_10.png
 .. |Chapter01_11| image:: ../_static/imgs/1_LED_Blink/Chapter01_11.png
@@ -277,7 +296,7 @@ After control board is :orange:`reset`, the setup() function will be executed fi
 
 setup() function is generally used to write code to initialize the hardware. And loop() function is used to write code to achieve certain functions. loop() function is executed repeatedly. When the execution reaches the end of loop(), it will jump to the beginning of loop() to run again.
 
-.. c:function:: Reset
+.. py:function:: Reset
 
     Reset operation will lead the code to be executed from the beginning. Switching on the power, finishing uploading the code and pressing the reset button will trigger reset operation.
 
@@ -287,6 +306,7 @@ setup() function is generally used to write code to initialize the hardware. And
 In the setup () function, first, we set pin 13 of the control board as output mode, which can make the port output high level or low level.
 
 .. code-block:: c
+    :linenos:
     
     // initialize digital pin 13 as an output.
     pinMode(13, OUTPUT);
@@ -294,17 +314,21 @@ In the setup () function, first, we set pin 13 of the control board as output mo
 Then, in the loop () function, set pin 13 of the control board to output high level to make LED light up.
 
 .. code-block:: c
+    :linenos:
     
     digitalWrite(13, HIGH);   // turn the LED on (HIGH is the voltage level)
 
 Wait for 1000ms, which is 1s. delay() function is used to make control board wait for a moment before executing the next statement. The parameter indicates the number of milliseconds to wait for.
+
 .. code-block:: c
+    :linenos:
     
     delay(1000);              // wait for a second
 
 Then set the pin 13 to output low level, and LED lights   off. One second later, the execution of loop () function will be completed. 
 
 .. code-block:: c
+    :linenos:
     
     digitalWrite(13, LOW);    // turn the LED off by making the voltage LOW
     delay(1000);              // wait for a second
@@ -313,7 +337,7 @@ The loop() function is constantly being executed, so LED will keep blinking.
 
 The functions called above are standard functions of the Arduino IDE, which have been defined in the Arduino IDE, and they can be called directly. We will introduce more common standard functions in later chapters.
 
-For more standard functions and the specific use method, please visit https://www.arduino.cc-Resources-Reference-Functions.
+For more standard functions and the specific use method, please visit `https://www.Arduino.cc <https://www.Arduino.cc>`_ -Resources-Reference-Functions.
 
 Verify and upload the code, then the LED starts blinking.
 

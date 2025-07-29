@@ -12,15 +12,20 @@ Now, try to drive a stepper motor.
 Component List
 ===============================================
 
-+-------------------------+------------------------------+-------------------------------+
-| Control board x1        | USB cable x1                 | Stepping Motor x1             |
-|                         |                              |                               |
-| |Chapter06_00|          | |Chapter06_01|               | |Chapter19_01|                |
-+-------------------------+------------------------------+-------------------------------+
-| Freenove Projects Board                                                                |
-|                                                                                        |
-| |Chapter06_04|                                                                         |
-+----------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+------------------------------+-------------------------------+
+    | Control board x1        | USB cable x1                 | Stepping Motor x1             |
+    |                         |                              |                               |
+    | |Chapter06_00|          | |Chapter06_01|               | |Chapter19_01|                |
+    +-------------------------+------------------------------+-------------------------------+
+    | Freenove Projects Board                                                                |
+    |                                                                                        |
+    | |Chapter06_04|                                                                         |
+    +----------------------------------------------------------------------------------------+
 
 .. |Chapter06_00| image:: ../_static/imgs/6_RGB_LED/Chapter06_00.png
 .. |Chapter06_01| image:: ../_static/imgs/6_RGB_LED/Chapter06_01.png
@@ -56,25 +61,33 @@ There are other methods to control Stepper Motors, such as: connect A phase, the
 
 The stator in the Stepper Motor we have supplied has 32 magnetic poles. Therefore, to complete one full revolution requires 32 full steps. The rotor (or output shaft) of the Stepper Motor is connected to a speed reduction set of gears and the reduction ratio is 1:64. Therefore, the final output shaft (exiting the Stepper Motor’s housing) requires 32 X 64 = 2048 steps to make one full revolution.
 
-ULN2003 stepper motor driver 
+ULN2003 stepper motor driver
 -----------------------------------------------
 
 A ULN2003 Stepper Motor Driver is used to convert weak signals into more powerful control signals in order to drive the Stepper Motor. In the illustration below, the input signal IN1-IN4 corresponds to the output signal A-D, and 4 LEDs are integrated into the board to indicate the state of these signals. The PWR interface can be used as a power supply for the Stepper Motor. By default, PWR and VCC are connected.
+
+.. image:: ../_static/imgs/19_Stepper_Motor/Chapter19_08.png
+    :align: center
 
 Circuit
 ========================================
 
 Use pins 11, 10, 9, 8 on the control board to control the ULN2003 stepper motor driver, and connect it to the stepper motor.
 
-+-------------------------+----------------------------------+
-| Schematic diagram       | Hardware connection              |
-|                         |                                  |
-| |Chapter19_04|          | |Chapter19_05|                   |
-+-------------------------+----------------------------------+
-| Hardware connection                                        |
-|                                                            |
-| |Chapter19_06|                                             |
-+------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+    
+    +-------------------------+----------------------------------+
+    | Schematic diagram       | Hardware connection              |
+    |                         |                                  |
+    | |Chapter19_04|          | |Chapter19_05|                   |
+    +-------------------------+----------------------------------+
+    | Hardware connection                                        |
+    |                                                            |
+    | |Chapter19_06|                                             |
+    +------------------------------------------------------------+
 
 .. |Chapter19_04| image:: ../_static/imgs/19_Stepper_Motor/Chapter19_04.png
 .. |Chapter19_05| image:: ../_static/imgs/19_Stepper_Motor/Chapter19_05.png
@@ -96,6 +109,7 @@ Now write code to control the stepper motor through ULN2003 stepper motor driver
 In the code, we define a function to make the motor rotate for a step. And the parameter determines the rotation direction of the stepper motor.
 
 .. code-block:: c
+    :linenos: 
 
     void moveOneStep(bool dir) {
       ......
@@ -123,7 +137,7 @@ We define a function to control the stepper motor to rotate several steps and co
     :linenos: 
     :language: c
     :dedent:
-    :lines: 17-22
+    :lines: 29-34
 
 .. py:function:: ? : operator
 
@@ -132,3 +146,8 @@ We define a function to control the stepper motor to rotate several steps and co
         int a = (1 > 0) ? 2: 3;
     
     Because 1>0 is tenable, so "a" will be assigned to 2.
+
+Verify and upload the code, and you will see the step motor rotate a full turn, and then repeat this process in a reverse direction.
+
+.. image:: ../_static/imgs/19_Stepper_Motor/Chapter19_07.png
+    :align: center
