@@ -66,14 +66,16 @@ We need to write code for control board and Processing to complete the interacti
 
 In order to simplify and facilitate the operation, we prepared a SerialDevice class for Processing to communicate with the control board. To use this class, we need to upload the following sketch to the control board:
 
-Processing\ControlBoard\SerialDevice\SerialDevice.ino.
+**Processing\\ControlBoard\\SerialDevice\\SerialDevice.ino.**
 
 This sketch only need to be uploaded once, so the latter projects of this tutorial does not need to upload again.
 
 SerialDevice class and SerialDevice.ino defined the communication protocol between them. The futures include:
 
 - Recognize the control board uploaded SerialDevice.ino and establish connection with it, automatically. No need to view and set the serial number of the control board connected to the computer, even if there are a number of control board, it can be connected automatically.
+
 - If control board uploaded SerialDevice.ino is not connected to computer, the Processing code will not be executed until the connection is done. The Processing sketch does not need to be run again after the connection is done.
+
 - Send data to control board and receive data from it.
 
 Sketch
@@ -81,7 +83,7 @@ Sketch
 
 Before running Processing sketch, make sure that SerialDevice.ino is uploaded to the control board.
 
-Processing sketches is stored under the Processing\Processing folder.
+Processing sketches is stored under the Processing\\Processing folder.
 
 Sketch Voltmeter
 ---------------------------------------
