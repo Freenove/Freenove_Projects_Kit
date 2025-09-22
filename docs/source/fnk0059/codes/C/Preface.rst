@@ -105,32 +105,61 @@ Finish
 Programming Software
 ******************************************************************************
 
-We use Arduino® IDE to write and upload code for the control board, which is a free and open source.
+Arduino Software (IDE) is used to write and upload the code for Arduino Board.
 
-(Arduino® is a trademark of Arduino LLC.)
+First, install Arduino Software (IDE): visit https://www.arduino.cc/en/software/
 
-Arduino IDE uses C/C++ programming language. Don't worry even if you have never used it, because this document contains programming knowledge and detailed explanation of the code.
+.. image:: ../_static/imgs/ArduinoIDE/Preface03.png
+    :align: center
 
-First, install Arduino IDE. Visit https://www.arduino.cc/en/Main/Software. Select and download a corresponding installer according to your operating system. If you are a windows user, please select the "Windows Installer".
+Select and download corresponding installer based on your operating system. If you are a Windows user, please select the "Windows" to download and install the driver correctly.
 
-.. image:: ../_static/imgs/Preface/Preface09.png
-    :align: center 
+.. image:: ../_static/imgs/ArduinoIDE/Preface04.png
+    :align: center
 
 After the downloading completes, run the installer. For Windows users, there may pop up an installation dialog box of driver during the installation process. When it is popped up, please allow the installation.
 
 After installation is completed, an shortcut will be generated in the desktop.
 
-.. image:: ../_static/imgs/Preface/Preface10.png
-    :align: center 
+.. image:: ../_static/imgs/ArduinoIDE/Preface05.png
+    :align: center
 
 Run it. The interface of the software is as follows:
 
-.. image:: ../_static/imgs/Preface/Preface11.png
-    :align: center 
+.. image:: ../_static/imgs/ArduinoIDE/Preface06.png
+    :align: center
 
-Programs written with Arduino IDE are called sketches. These sketches are written in a text editor and are saved with the file extension.ino. The editor has features for cutting/pasting and for searching/replacing text. The message area gives feedback while saving and exporting and also displays errors. The console displays text output by the Arduino IDE, including complete error messages and other information. The bottom right-hand corner of the window displays the configured board and serial port. The toolbar buttons allow you to verify and upload programs, create, open, and save sketches, and open the serial monitor.
+Programs written with Arduino IDE are called sketches. These sketches are written in a text editor and are saved with the file extension.ino. The editor has features for cutting/pasting and for searching/replacing text. The console displays text output by the Arduino IDE, including complete error messages and other information. The bottom right-hand corner of the window displays the configured board and serial port. The toolbar buttons allow you to verify and upload programs, open the serial monitor, and access the serial plotter.
 
-.. image:: ../_static/imgs/Preface/Preface12.png
-    :align: center 
+.. table::
+    :align: center
+    :class: table-line
+    :width: 80%
+    
+    +-------------+---------------------------------------------------------------------+
+    | |Preface07| | Verify                                                              |
+    |             |                                                                     |
+    |             | Checks your code for errors compiling it.                           |
+    +-------------+---------------------------------------------------------------------+
+    | |Preface08| | Upload                                                              |
+    |             |                                                                     |
+    |             | Compiles your code and uploads it to the configured board.          |
+    +-------------+---------------------------------------------------------------------+
+    | |Preface09| | Debug                                                               |
+    |             |                                                                     |
+    |             | Troubleshoot code errors and monitor program running status.        |
+    +-------------+---------------------------------------------------------------------+
+    | |Preface10| | Serial Plotter                                                      |
+    |             |                                                                     |
+    |             | Real-time plotting of serial port data charts.                      |
+    +-------------+---------------------------------------------------------------------+
+    | |Preface11| | Serial Monitor                                                      |
+    |             |                                                                     |
+    |             | Used for debugging and communication between devices and computers. |
+    +-------------+---------------------------------------------------------------------+
 
-Additional commands are found within five menus: File, Edit, Sketch, Tools, Help. The menus are context sensitive, which means only those items relevant to the work currently being carried out are available.
+.. |Preface07| image:: ../_static/imgs/ArduinoIDE/Preface07.png
+.. |Preface08| image:: ../_static/imgs/ArduinoIDE/Preface08.png
+.. |Preface09| image:: ../_static/imgs/ArduinoIDE/Preface09.png
+.. |Preface10| image:: ../_static/imgs/ArduinoIDE/Preface10.png
+.. |Preface11| image:: ../_static/imgs/ArduinoIDE/Preface11.png
