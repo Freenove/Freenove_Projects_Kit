@@ -111,6 +111,8 @@ First, install Arduino Software (IDE): visit https://www.arduino.cc/en/software/
 
 .. image:: ../_static/imgs/ArduinoIDE/Preface03.png
     :align: center
+    :width: 99%
+    :class: image-border
 
 Select and download corresponding installer based on your operating system. If you are a Windows user, please select the "Windows" to download and install the driver correctly.
 
